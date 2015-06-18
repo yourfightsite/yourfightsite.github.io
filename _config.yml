@@ -5,3 +5,16 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
+
+collections:
+  projects:
+    category: "Web Design"
+    industry: "Pro Wrestling"
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project

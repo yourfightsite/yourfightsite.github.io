@@ -1,0 +1,8 @@
+---
+category: "Web Design"
+industry: "Pro Wrestling"
+layout: project
+permalink: /wrestling-web-design/great-american-wrestling/
+title: "Great American Wrestling"
+website_url: www.gawwrestling.com
+---

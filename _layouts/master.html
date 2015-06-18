@@ -4,7 +4,33 @@
     <meta charset="utf-8" />
     <title>{{ page.title }}</title>
     <meta name="author" content="Martin Bean" />
+    {% if page.excerpt %}
+    <meta name="description" content="{{ page.excerpt }}" />
+    {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="fb:app_id" content="264294516930801" />
+    {% if page.category and page.industry %}
+    <meta property="og:article:section" content="{{ page.industry }} {{ page.category }}" />
+    {% endif %}
+    {% if page.excerpt %}
+    <meta property="og:description" content="{{ page.excerpt }}" />
+    {% endif %}
+    {% if page.image %}
+    <meta property="og:image" content="{{ page.image }}" />
+    {% endif %}
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="Your Fight Site" />
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta name="twitter:card" content="summary{% if page.image %}_large_image{% endif %}" />
+    <meta name="twitter:creator" content="@yourfightsite" />
+    <meta name="twitter:description" content="{{ page.description }}" />
+    {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image }}" />
+    {% endif %}
+    <meta name="twitter:site" content="@yourfightsite" />
+    <meta name="twitter:title" content="{{ page.title }}" />
     <link href="//plus.google.com/+martinbean" rel="author" />
     <link href="//plus.google.com/+yourfightsite" rel="publisher" />
     <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" />
@@ -21,10 +47,29 @@
       <div class="container">
         <a class="site-title" href="{{ site.baseurl }}/" rel="home">Your Fight Site</a>
         <ul class="list-inline site-navigation" role="navigation">
-          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li class="hidden-xs"><a href="{{ site.baseurl }}/">Home</a></li>
           <li><a href="{{ site.baseurl }}/services">Services</a></li>
           <li><a href="{{ site.baseurl }}/our-work">Our work</a></li>
           <li><a href="{{ site.baseurl }}/get-a-quote">Get a quote</a></li>
+          <li class="divider"></li>
+          <li>
+            <a href="https://www.facebook.com/yourfightsite" rel="external" title="Your Fight Site on Facebook">
+              <span aria-hidden="true" class="fa fa-facebook"></span>
+              <span class="sr-only">Your Fight Site on Facebook</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/yourfightsite" rel="external" title="Your Fight Site on Twitter">
+              <span aria-hidden="true" class="fa fa-twitter"></span>
+              <span class="sr-only">Your Fight Site on Twitter</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://plus.google.com/+yourfightsite" rel="external" title="Your Fight Site on Google+">
+              <span aria-hidden="true" class="fa fa-google-plus"></span>
+              <span class="sr-only">Your Fight Site on Google+</span>
+            </a>
+          </li>
         </ul>
       </div>
     </header>
