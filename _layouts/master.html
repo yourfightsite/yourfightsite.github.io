@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="Martin Bean" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="//plus.google.com/+martinbean" rel="author" />
+    <link href="//plus.google.com/+yourfightsite" rel="publisher" />
+    <link href="{{ site.baseurl }}/favicon.ico" rel="shortcut icon" />
+    <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ site.baseurl }}/css/application.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="{{ site.baseurl }}/js/lib/html5shiv.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container">
+        <a class="site-title" href="{{ site.baseurl }}/" rel="home">Your Fight Site</a>
+        <ul class="list-inline site-navigation" role="navigation">
+          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li><a href="{{ site.baseurl }}/services">Services</a></li>
+          <li><a href="{{ site.baseurl }}/our-work">Our work</a></li>
+          <li><a href="{{ site.baseurl }}/get-a-quote">Get a quote</a></li>
+        </ul>
+      </div>
+    </header>
+    <main class="site-main" role="main">
+      {{ content }}
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="clearfix">
+          <p class="copyright">&copy; {{ "now"|date: "%Y" }} Your Fight Site. All rights reserved.</p>
+          <ul class="contact-details fa-ul">
+            <li>
+              <span aria-hidden="true" class="fa fa-li fa-envelope"></span>
+              <a href="mailto:">info@yourfightsite.com</a>
+            </li>
+            <li>
+              <span aria-hidden="true" class="fa fa-li fa-phone"></span>
+              +44 (0) 191 645 0245
+            </li>
+            <li>
+              <span aria-hidden="true" class="fa fa-li fa-map-marker"></span>
+              Based in <strong>Newcastle upon Tyne, <abbr class="initialism" title="United Kingdom">UK</abbr></strong>
+            </li>
+          </ul>
+        </div>
+        <p class="legal text-center">
+          <small>“Your Fight Site” is a trading name of MCB Web Design <abbr title="Limited">Ltd</abbr>.
+            Company &numero; 09017111.
+            Registered in England &amp; Wales.</small>
+        </p>
+      </div>
+    </footer>
+    <script src="{{ site.baseurl }}/js/lib/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/lib/bootstrap.min.js"></script>
+    <script src="{{ site.baseurl }}/js/application.js"></script>
+  </body>
+</html>

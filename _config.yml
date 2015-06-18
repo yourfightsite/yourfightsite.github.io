@@ -1,0 +1,7 @@
+# Site settings
+title: Your Fight Site
+url: "http://www.yourfightsite.com"
+baseurl: ""
+
+# Build settings
+markdown: kramdown

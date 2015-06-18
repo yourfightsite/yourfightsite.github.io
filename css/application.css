@@ -1,0 +1,104 @@
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+abbr[title] {
+  border-bottom: none;
+}
+
+.site-header {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.site-header a {
+  color: #333;
+  text-transform: uppercase;
+}
+.site-header a:hover,
+.site-header a:focus {
+  color: #c00;
+  text-decoration: none;
+}
+
+.site-title {
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.site-footer {
+  color: #777;
+  background-color: #222;
+  padding: 30px 0;
+}
+.site-footer a {
+  color: #999;
+}
+.site-footer a:hover,
+.site-footer a:focus {
+  color: #c0c0c0;
+}
+.site-footer strong {
+  color: #999;
+  font-weight: inherit;
+}
+
+.site-footer .legal {
+  margin-bottom: 0;
+}
+
+.site-navigation {
+  margin-bottom: 0;
+}
+
+.jumbotron-home {
+  color: #eee;
+  background-color: #333;
+}
+.jumbotron-home h1 {
+  font-weight: 300;
+  text-shadow: 0 1px 1px rgba(0,0,0,.75);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.jumbotron-home h1 strong {
+  color: #fff;
+  font-weight: inherit;
+}
+
+@media (min-width: 500px) {
+  .site-title {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .site-navigation {
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-footer .contact-details {
+    margin-left: -5px;
+  }
+  .site-footer .contact-details > li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  .site-footer .contact-details .fa-li {
+    position: static;
+    left: auto;
+    width: auto;
+    padding-right: 3px;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-footer .copyright {
+    float: left;
+  }
+  .site-footer .contact-details {
+    float: right;
+  }
+}
