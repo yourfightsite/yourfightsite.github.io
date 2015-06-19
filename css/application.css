@@ -23,10 +23,10 @@ abbr[title] {
 
 .site-title {
   font-weight: 700;
-  line-height: 30px;
+  line-height: 34px;
   background: url(../img/logo@1x.png) no-repeat 0 50%;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   padding-left: 43px;
 }
 
@@ -53,7 +53,15 @@ abbr[title] {
 
 .site-navigation {
   margin-bottom: 0;
-  padding: 5px 0;
+}
+.site-navigation .btn-primary,
+.site-navigation .btn-primary:hover,
+.site-navigation .btn-primary:focus {
+  color: #fff;
+}
+.site-navigation .btn-primary {
+  position: relative;
+  top: -1px;
 }
 
 .page-header,
@@ -144,6 +152,12 @@ abbr[title] {
 .project-item a:hover .project-category,
 .project-item a:focus .project-category {
   color: #900;
+}
+
+@media (max-width: 600px) {
+  .site-navigation li:first-child {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
