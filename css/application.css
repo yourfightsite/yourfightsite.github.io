@@ -2,6 +2,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+h1 .text-muted {
+  color: #555;
+}
+
 abbr[title] {
   border-bottom: none;
 }
@@ -83,7 +87,10 @@ abbr[title] {
 
 .jumbotron-home {
   color: #eee;
-  background-color: #333;
+  background: url(../img/jumbotron-bg.jpg) repeat 50% 50%;
+  position: relative;
+  margin-bottom: 0;
+  padding: 60px 0 75px;
 }
 .jumbotron-home h1 {
   font-weight: 300;
@@ -94,6 +101,26 @@ abbr[title] {
 .jumbotron-home h1 strong {
   color: #fff;
   font-weight: inherit;
+}
+
+.jumbotron-home:before,
+.jumbotron-home:after {
+  content: ' ';
+  background-repeat: repeat-x;
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+}
+.jumbotron-home:before {
+  background-image: url(../img/jumbotron-top.png);
+  top: 0;
+  height: 20px;
+}
+.jumbotron-home:after {
+  background-image: url(../img/jumbotron-bottom.png);
+  bottom: 0;
+  height: 35px;
 }
 
 .project-list {
@@ -140,6 +167,7 @@ abbr[title] {
 .project-thumbnail .overlay .project-name {
   color: #eee;
   font-size: 18px;
+  font-weight: 700;
   margin-top: 0;
 }
 
@@ -152,6 +180,25 @@ abbr[title] {
 .project-item a:hover .project-category,
 .project-item a:focus .project-category {
   color: #900;
+}
+
+.home-section {
+  padding: 30px 0;
+}
+.home-section h1 {
+  margin-top: 0;
+}
+
+.home-section-inverse {
+  color: #eee;
+  text-shadow: 0 1px 1px rgba(0,0,0,.75);
+  background-color: #222;
+}
+.home-section-inverse h1 {
+  color: #fff;
+}
+.home-section-inverse .btn {
+  text-shadow: none;
 }
 
 @media (max-width: 600px) {
@@ -187,6 +234,10 @@ abbr[title] {
   .project-item {
     width: 50%;
     float: left;
+  }
+
+  .jumbotron-home h1 {
+    font-size: 36px;
   }
 }
 
