@@ -206,6 +206,13 @@ abbr[title] {
   margin-top: 10px;
 }
 
+@media (min-width: 500px) {
+  .project-item {
+    width: 50%;
+    float: left;
+  }
+}
+
 @media (max-width: 600px) {
   .site-navigation li:first-child {
     display: none;
@@ -240,11 +247,6 @@ abbr[title] {
     left: auto;
     width: auto;
     padding-right: 3px;
-  }
-
-  .project-item {
-    width: 50%;
-    float: left;
   }
 
   .jumbotron-home h1 {

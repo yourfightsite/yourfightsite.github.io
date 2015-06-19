@@ -18,7 +18,7 @@ title: Projects
         <article class="project-item" data-category="{{ project.category }}" data-industry="{{ project.industry }}" itemscope itemtype="http://schema.org/CreativeWork">
           <a href="{{ project.url }}" itemprop="url">
             <figure class="project-thumbnail">
-              <img src="//placehold.it/360x203" alt="{{ project.title }} thumbnail" itemprop="image" class="img-responsive" />
+              <img src="{{ site.baseurl }}/img/projects/thumbs/{{ project.slug }}.jpg" alt="{{ project.title }} thumbnail" itemprop="image" class="img-responsive" />
               <div class="overlay">
                 <h2 class="project-name" itemprop="name">{{ project.title }}</h2>
                 <p>View project details</p>
