@@ -1,4 +1,5 @@
 html {
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -37,6 +38,7 @@ abbr[title] {
 .site-footer {
   color: #777;
   background: #222 url(../img/footer-bg.png) repeat-x 50% 0;
+  margin-top: 10px;
   padding: 45px 0 30px;
 }
 .site-footer a {
