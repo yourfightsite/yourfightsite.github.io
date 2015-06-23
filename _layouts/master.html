@@ -43,6 +43,7 @@
     <![endif]-->
   </head>
   <body>
+    {% include analytics.html %}
     <header class="site-header" role="banner">
       <div class="container">
         <a class="site-title" href="{{ site.baseurl }}/" rel="home">Your Fight Site</a>
@@ -51,7 +52,7 @@
           <li><a href="{{ site.baseurl }}/services">Services</a></li>
           <li><a href="{{ site.baseurl }}/our-work">Our work</a></li>
           <li>
-            <a class="btn btn-primary" href="{{ site.baseurl }}/get-a-quote">Get a quote</a>
+            <a class="btn btn-primary" data-track-event data-event-category="button" data-event-label="Get a quote" href="mailto:{{ site.email }}">Get a quote</a>
           </li>
           <li>
             <a href="https://www.facebook.com/yourfightsite" rel="external" title="Your Fight Site on Facebook">
