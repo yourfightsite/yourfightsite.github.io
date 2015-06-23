@@ -27,7 +27,7 @@ abbr[title] {
 }
 
 .site-title {
-  font-weight: 700;
+  font-weight: 500;
   line-height: 34px;
   background: url(../img/logo@1x.png) no-repeat 0 50%;
   display: inline-block;
@@ -208,6 +208,15 @@ abbr[title] {
   margin-top: 10px;
 }
 
+.project-name {
+  margin-top: 0;
+}
+
+.project-details {
+  text-align: center;
+  margin: 0 auto;
+}
+
 @media (min-width: 500px) {
   .project-item {
     width: 50%;
@@ -254,6 +263,15 @@ abbr[title] {
   .jumbotron-home h1 {
     font-size: 36px;
   }
+
+  .project-details {
+    max-width: 750px;
+    margin-top: -10px;
+  }
+
+  .project-description {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -275,6 +293,16 @@ abbr[title] {
   }
   .project-item:nth-child(3n+1) {
     clear: left;
+  }
+
+  .project-details {
+    margin-top: -15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-details {
+    margin-top: -20px;
   }
 }
 
