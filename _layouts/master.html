@@ -25,7 +25,7 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta name="twitter:card" content="summary{% if page.image %}_large_image{% endif %}" />
     <meta name="twitter:creator" content="@yourfightsite" />
-    <meta name="twitter:description" content="{{ page.description }}" />
+    <meta name="twitter:description" content="{{ page.excerpt }}" />
     {% if page.image %}
     <meta name="twitter:image" content="{{ page.image }}" />
     {% endif %}
@@ -85,7 +85,7 @@
           <ul class="contact-details fa-ul">
             <li>
               <span aria-hidden="true" class="fa fa-li fa-envelope"></span>
-              <a href="mailto:">info@yourfightsite.com</a>
+              <a href="mailto:{{ site.email }}">{{ site.email }}</a>
             </li>
             <li>
               <span aria-hidden="true" class="fa fa-li fa-phone"></span>

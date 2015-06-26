@@ -217,6 +217,33 @@ abbr[title] {
   margin: 0 auto;
 }
 
+.post-headline {
+  margin-top: 0;
+}
+
+.post-meta {
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.post-content figure {
+  display: block;
+  margin: 20px -15px;
+}
+.post-content figcaption {
+  font-size: 85%;
+  font-style: italic;
+  display: block;
+  margin-top: 5px;
+  padding: 0 15px;
+}
+
+.post-content img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
 @media (min-width: 500px) {
   .project-item {
     width: 50%;
@@ -271,6 +298,44 @@ abbr[title] {
 
   .project-description {
     font-size: 16px;
+  }
+
+  .post-primary {
+    padding-left: 160px;
+  }
+
+  .post-meta {
+    text-align: right;
+    width: 160px;
+    margin-bottom: 0;
+    margin-left: -160px;
+    padding-right: 30px;
+    float: left;
+  }
+
+  .post-published,
+  .post-author {
+    display: block;
+  }
+
+  .post-author:first-letter {
+    text-transform: capitalize;
+  }
+
+  .post-content blockquote,
+  .post-content figure {
+    margin-right: 0;
+    margin-left: -160px;
+  }
+
+  .post-content blockquote {
+    width: 50%;
+    margin-bottom: 0;
+    float: left;
+  }
+
+  .post-content figcaption {
+    padding: 0;
   }
 }
 
