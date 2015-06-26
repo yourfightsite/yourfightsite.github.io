@@ -26,6 +26,10 @@ abbr[title] {
   text-decoration: none;
 }
 
+.site-navigation .divider {
+  padding-top: 10px;
+}
+
 .site-title {
   font-weight: 500;
   line-height: 34px;
