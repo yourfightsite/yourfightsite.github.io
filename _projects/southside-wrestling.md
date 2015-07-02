@@ -1,5 +1,6 @@
 ---
 category: "Web Design"
+excerpt: "Details of the wrestling web design project Your Fight Site worked on with Southside Wrestling."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/southside-wrestling/

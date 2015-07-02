@@ -1,5 +1,6 @@
 ---
 category: "Web Design"
+excerpt: "Details of the wrestling web design project Your Fight Site worked on with Preston City Wrestling."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/preston-city-wrestling/

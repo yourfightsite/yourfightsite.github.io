@@ -1,5 +1,6 @@
 ---
 category: "Web Design"
+excerpt: "Details of the wrestling podcast website Your Fight Site created for with The Indy Corner."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/the-indy-corner/

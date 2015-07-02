@@ -1,5 +1,6 @@
 ---
 category: "Web Design"
+excerpt: "Details of the MMA web design project Your Fight Site worked on with BAMMA."
 industry: MMA
 layout: project
 permalink: /mma-web-design/bamma/
