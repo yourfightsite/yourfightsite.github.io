@@ -1,11 +1,12 @@
 ---
 category: "Web Design"
+client: "Great American Wrestling"
 excerpt: "Details of the wrestling web design project Your Fight Site worked on with Great American Wrestling."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/great-american-wrestling/
 slug: great-american-wrestling
-title: "Great American Wrestling"
+title: "Wrestling web design: Great American Wrestling"
 website_url: www.gawwrestling.com
 ---
 <p>Great American Wrestling, based in Knoxville, Tennessee, came to us in early 2015 looking for a web presence.

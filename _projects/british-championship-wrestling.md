@@ -1,11 +1,12 @@
 ---
 category: "Web Design"
+client: "British Championship Wrestling"
 excerpt: "Details of the wrestling web design project Your Fight Site worked on with British Championship Wrestling."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/british-championship-wrestling/
 slug: british-championship-wrestling
-title: "British Championship Wrestling"
+title: "BCW Wrestling: wrestling web design project"
 website_url: www.bcw-wrestling.com
 ---
 <p>British Championship Wrestling is one of Your Fight Site’s oldest clients.

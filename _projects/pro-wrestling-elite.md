@@ -1,11 +1,12 @@
 ---
 category: "Web Design"
+client: "Pro Wrestling Elite"
 excerpt: "Details of the wrestling web design project Your Fight Site worked on with Pro Wrestling Elite."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/pro-wrestling-elite/
 slug: pro-wrestling-elite
-title: "Pro Wrestling Elite"
+title: "Wrestling web design: Pro Wrestling Elite"
 website_url: www.prowrestlingelite.com
 ---
 <p>Pro Wrestling Elite holds semi-regular shows in Scotland, using both the best professional wrestling talent from the UK as well as international stars.</p>

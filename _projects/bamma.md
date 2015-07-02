@@ -1,11 +1,12 @@
 ---
 category: "Web Design"
+client: BAMMA
 excerpt: "Details of the MMA web design project Your Fight Site worked on with BAMMA."
 industry: MMA
 layout: project
 permalink: /mma-web-design/bamma/
 slug: bamma
-title: BAMMA
+title: "MMA web design: BAMMA"
 website_url: www.bamma.com
 ---
 <p><abbr class="initialism" title="British Association of Mixed Martial Arts">BAMMA</abbr> is the premier mixed martial arts organisation in Europe, featuring some of the best fighting talent outside of the <abbr class="initialism" title="Ultimate Fighting Championship">UFC</abbr>.

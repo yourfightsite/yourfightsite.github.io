@@ -1,11 +1,12 @@
 ---
 category: "Web Design"
+client: "Premier British Wrestling"
 excerpt: "Details of the wrestling web design project Your Fight Site worked on with Premier British Wrestling."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/premier-british-wrestling/
 slug: premier-british-wrestling
-title: "Premier British Wrestling"
+title: "Wrestling web design: Premier British Wrestling"
 website_url: www.pbwwrestling.com
 ---
 <p>Premier British Wrestling is currently one of the UK's fastest-growing professional wrestling promotions. Since their début in March 2006, Your Fight Site has worked alongside them, designing and developing their official website and branding, including logo.</p>

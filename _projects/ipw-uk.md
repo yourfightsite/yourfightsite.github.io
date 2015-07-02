@@ -1,11 +1,12 @@
 ---
 category: "Web Design"
+client: "International Pro Wrestling: UK"
 excerpt: "Details of the wrestling web design project Your Fight Site worked on with IPW:UK."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/ipw-uk/
 slug: ipw-uk
-title: "International Pro Wrestling: UK"
+title: "Wrestling web design: International Pro Wrestling: UK"
 website_url: www.ipwuk.com
 ---
 <p>IPW:UK have been holding live events in the South of England since 2004.

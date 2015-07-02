@@ -1,11 +1,12 @@
 ---
 category: "Web Design"
+client: "Preston City Wrestling"
 excerpt: "Details of the wrestling web design project Your Fight Site worked on with Preston City Wrestling."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/preston-city-wrestling/
 slug: preston-city-wrestling
-title: "Preston City Wrestling"
+title: "Wrestling web design: Preston City Wrestling"
 website_url: www.prestoncitywrestling.com
 ---
 <p>Preston City Wrestling has quickly established itself as one of the UK’s premier promoters, constantly delivering action-packed shows with the biggest names in wrestling.</p>

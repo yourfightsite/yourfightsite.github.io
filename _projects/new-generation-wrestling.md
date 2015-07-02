@@ -1,11 +1,12 @@
 ---
 category: "Web Design"
+client: "New Generation Wrestling"
 excerpt: "Details of the wrestling web design project Your Fight Site worked on with New Generation Wrestling."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/new-generation-wrestling/
 slug: new-generation-wrestling
-title: "New Generation Wrestling"
+title: "Wrestling web design: New Generation Wrestling"
 website_url: www.ngwuk.com
 ---
 <p>Your Fight Site spoke with Richard Dunn of Hull-based New Generation Wrestling in 2010 and a year later Richard approached us looking to revamp of NGW’s web presence.</p>

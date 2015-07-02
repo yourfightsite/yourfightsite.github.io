@@ -1,11 +1,12 @@
 ---
 category: "Web Design"
+client: "The Indy Corner"
 excerpt: "Details of the wrestling podcast website Your Fight Site created for with The Indy Corner."
 industry: "Pro Wrestling"
 layout: project
 permalink: /wrestling-web-design/the-indy-corner/
 slug: the-indy-corner
-title: "The Indy Corner"
+title: "Wrestling web design: The Indy Corner"
 website_url: www.theindycorner.com
 ---
 <p>The Indy Corner is one of the most-listened to wrestling podcasts, focusing on the independent professional wrestling scene.</p>
