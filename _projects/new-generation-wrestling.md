@@ -8,6 +8,8 @@ permalink: /wrestling-web-design/new-generation-wrestling/
 slug: new-generation-wrestling
 title: "Wrestling web design: New Generation Wrestling"
 website_url: www.ngwuk.com
+redirect_from:
+  - /work/web-design/new-generation-wrestling/
 ---
 <p>Your Fight Site spoke with Richard Dunn of Hull-based New Generation Wrestling in 2010 and a year later Richard approached us looking to revamp of NGW’s web presence.</p>
 <p>Richard was looking for a more professional-looking website that clearly advertised upcoming events, but was also easy to use and easy for Richard and fellow NGW staff to update.</p>

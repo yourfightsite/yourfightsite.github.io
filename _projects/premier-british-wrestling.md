@@ -8,6 +8,8 @@ permalink: /wrestling-web-design/premier-british-wrestling/
 slug: premier-british-wrestling
 title: "Wrestling web design: Premier British Wrestling"
 website_url: www.pbwwrestling.com
+redirect_from:
+  - /work/web-design/premier-british-wrestling/
 ---
 <p>Premier British Wrestling is currently one of the UK's fastest-growing professional wrestling promotions. Since their début in March 2006, Your Fight Site has worked alongside them, designing and developing their official website and branding, including logo.</p>
 <p>Towards the end of 2011, Premier British Wrestling asked Your Fight Site to give the PBW website a complete overhaul to go with their re-branding from a primarily red to primarily blue colour palette.</p>

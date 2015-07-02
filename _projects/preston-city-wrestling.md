@@ -8,6 +8,8 @@ permalink: /wrestling-web-design/preston-city-wrestling/
 slug: preston-city-wrestling
 title: "Wrestling web design: Preston City Wrestling"
 website_url: www.prestoncitywrestling.com
+redirect_from:
+  - /work/web-design/preston-city-wrestling/
 ---
 <p>Preston City Wrestling has quickly established itself as one of the UK’s premier promoters, constantly delivering action-packed shows with the biggest names in wrestling.</p>
 <p><abbr class="initialism" title="Preston City Wrestling">PCW</abbr> saw the importance of establishing a strong image for themselves and called upon Your Fight Site to design and develop its website.</p>

@@ -8,6 +8,8 @@ permalink: /wrestling-web-design/the-indy-corner/
 slug: the-indy-corner
 title: "Wrestling web design: The Indy Corner"
 website_url: www.theindycorner.com
+redirect_from:
+  - /work/web-design/the-indy-corner/
 ---
 <p>The Indy Corner is one of the most-listened to wrestling podcasts, focusing on the independent professional wrestling scene.</p>
 <p>Stu Rodgers of The Indy Corner had seen our work on various independent wrestling promotions’ websites and called upon us to create a website to promote his podcast.</p>

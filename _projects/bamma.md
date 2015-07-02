@@ -8,6 +8,8 @@ permalink: /mma-web-design/bamma/
 slug: bamma
 title: "MMA web design: BAMMA"
 website_url: www.bamma.com
+redirect_from:
+  - /work/web-design/bamma/
 ---
 <p><abbr class="initialism" title="British Association of Mixed Martial Arts">BAMMA</abbr> is the premier mixed martial arts organisation in Europe, featuring some of the best fighting talent outside of the <abbr class="initialism" title="Ultimate Fighting Championship">UFC</abbr>.
   BAMMA holds multiple events per year in arenas across the <abbr class="initialism" title="United Kingdom">UK</abbr> and broadcast live on Spike TV.</p>
