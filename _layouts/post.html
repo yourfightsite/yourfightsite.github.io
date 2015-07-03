@@ -18,6 +18,17 @@ layout: master
       </article>
     </div>
     <div class="col-md-4 post-secondary">
+      <h2 class="h3 heading">Latest posts</h2>
+      <ol class="list-unstyled latest-posts">
+        {% for post in site.posts limit:5 %}
+          <li itemscope itemtype="http://schema.org/BlogPosting">
+            <time class="post-published" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
+            <a href="{{ post.url }}" itemprop="url">
+              <span itemprop="headline">{{ post.title }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ol>
     </div>
   </div>
 </div>

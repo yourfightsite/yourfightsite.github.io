@@ -221,8 +221,14 @@ abbr[title] {
   margin: 0 auto;
 }
 
+.post-primary {
+  margin-bottom: 20px;
+}
+
 .post-headline {
+  line-height: 40px;
   margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .post-meta {
@@ -230,6 +236,9 @@ abbr[title] {
   margin-bottom: 10px;
 }
 
+.post-content > :last-child {
+  margin-bottom: 0;
+}
 .post-content figure {
   display: block;
   margin: 20px -15px;
@@ -246,6 +255,23 @@ abbr[title] {
   display: block;
   width: 100%;
   max-width: 100%;
+}
+
+.post-secondary .heading {
+  line-height: 30px;
+  margin-top: 0;
+}
+
+.latest-posts > li {
+  margin-bottom: 10px;
+  padding-left: 85px;
+}
+.latest-posts .post-published {
+  color: #777;
+  display: block;
+  width: 85px;
+  margin-left: -85px;
+  float: left;
 }
 
 @media (min-width: 500px) {
@@ -347,6 +373,10 @@ abbr[title] {
   .project-item:nth-child(odd) {
     clear: left;
   }
+
+  .post-secondary {
+    margin-left: 160px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -366,6 +396,10 @@ abbr[title] {
 
   .project-details {
     margin-top: -15px;
+  }
+
+  .post-secondary {
+    padding-top: 10px;
   }
 }
 
