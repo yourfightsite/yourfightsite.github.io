@@ -7,7 +7,7 @@ timezone: "Europe/London"
 
 # Build settings
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+permalink: /blog/:year/:month/:day/:title/
 
 collections:
   projects:
