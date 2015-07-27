@@ -15,6 +15,24 @@ layout: master
         <div class="post-content">
           {{ page.content }}
         </div>
+        <ul class="pager">
+          {% if page.previous %}
+            <li class="previous">
+              <a href="{{ page.previous.url }}" rel="prev" title="{{ page.previous.title }}">
+                <span aria-hidden="true">&larr;</span>
+                Previous post
+              </a>
+            </li>
+          {% endif %}
+          {% if page.next %}
+            <li class="next">
+              <a href="{{ page.next.url }}" rel="next" title="{{ page.next.title }}">
+                Next post
+                <span aria-hidden="true">&rarr;</span>
+              </a>
+            </li>
+          {% endif %}
+        </ul>
       </article>
     </div>
     <div class="col-md-4 post-secondary">
