@@ -274,6 +274,19 @@ abbr[title] {
   float: left;
 }
 
+.blog-post {
+  margin-bottom: 20px;
+}
+.blog-post-headline {
+  font-size: 18px;
+}
+.blog-post-published {
+  color: #777;
+}
+.blog-post-description {
+  margin-bottom: 0;
+}
+
 @media (min-width: 500px) {
   .project-item {
     width: 50%;
@@ -290,6 +303,16 @@ abbr[title] {
 @media (max-width: 767px) {
   .home-section-vod .col-sm-6:last-child {
     text-align: center;
+  }
+
+  #news .col-sm-6 .blog-post {
+    padding-bottom: 19px;
+    border-bottom: 1px solid #eee;
+  }
+  #news .col-sm-6:last-child .blog-post {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 }
 

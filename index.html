@@ -29,3 +29,29 @@ title: "MMA &amp; Wrestling Web Design &amp; Graphic Design &middot; Your Fight 
     </div>
   </div>
 </div>
+
+<div id="news">
+  <div class="container">
+    <header class="text-center">
+      <h1>
+        <span class="text-muted">Latest news from</span>
+        <span>Your Fight Site</span>
+      </h1>
+    </header>
+    <div class="row">
+      {% for post in site.posts offset: 0 limit: 2  %}
+        <div class="col-sm-6">
+          <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
+            <h2 class="blog-post-headline" itemprop="headline">
+              <a href="{{ post.url }}" itemprop="url">{{ post.title }}</a>
+            </h2>
+            <p class="blog-post-published">
+              <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" pubdate>{{ post.date | date_to_long_string }}</time>
+            </p>
+            <p class="blog-post-description" itemprop="description">{{ post.excerpt }}</p>
+          </article>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
