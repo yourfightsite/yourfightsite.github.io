@@ -3,6 +3,11 @@
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
+body {
+  background-image: url(../img/bg.png);
+  background-repeat: repeat;
+}
+
 abbr[title] {
   text-decoration: none;
 }
@@ -15,6 +20,8 @@ strong {
 .site-header {
   padding-top: $spacer-y * 3;
   padding-bottom: $spacer-y * 3;
+
+
 }
 
 .navbar-light {
@@ -28,6 +35,15 @@ strong {
       color: $brand-primary;
       text-decoration: none;
     }
+  }
+
+  .navbar-brand,
+  .navbar-nav {
+    text-shadow: 0 .1rem 0 #fff;
+  }
+
+  .navbar-toggler {
+    background-color: #fff;
   }
 }
 
