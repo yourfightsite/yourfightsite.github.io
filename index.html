@@ -1,57 +1,71 @@
 ---
-excerpt: "Your Fight Site is a web design &amp; graphic design agency specialising in the MMA &amp; pro wrestling industries."
-layout: master
-title: "MMA &amp; Wrestling Web Design &amp; Graphic Design &middot; Your Fight Site"
+excerpt: We are Your Fight Site, a web design &amp; graphic design agency serving the wrestling &amp; MMA industries.
+layout: default
 ---
-<div class="jumbotron jumbotron-home text-center">
+<header class="jumbotron jumbotron-fluid jumbotron-home">
   <div class="container">
-    <h1>Your Fight Site is a <strong>web design</strong> &amp; <strong>graphic design</strong> agency specialising in the <strong>pro wrestling</strong> &amp; <strong><abbr class="initialism" title="Mixed Martial Arts">MMA</abbr></strong> industries</h1>
+    <h1>We are Your Fight Site, a <strong>web design</strong> and <strong>graphic design</strong> agency serving the wrestling &amp; <abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> industries.</h1>
   </div>
-</div>
-
-<div class="home-section home-section-vod">
-  <div class="container">
-    <header class="text-center">
-      <h1>
-        <span class="text-muted">Introducing</span>
-        <span>Your Fight Site <abbr class="initialism" title="Video On Demand">VOD</abbr></span>
-      </h1>
+</header>
+<!-- Latest projects -->
+<!-- Clients -->
+<section id="clients">
+  <div class="container text-center">
+    <header>
+      <h1>Who we work with</h1>
+      <p class="lead">We’ve been working with wrestling promoters and <abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> promoters for <strong>over 10 years</strong>.</p>
     </header>
-    <div class="row">
-      <figure class="col-sm-6">
-        <img src="{{ site.baseurl }}/img/your-fight-site-vod.jpg" alt="Your Fight Site VOD" class="center-block img-responsive" />
-      </figure>
-      <div class="col-sm-6">
-        <p>Your Fight Site <abbr class="initialism" title="Video On Demand">VOD</abbr> is a video on demand platform that allows wrestling fans to watch pro wrestling action from around the world and for pro wrestling promoters to self-publish their video content.</p>
-        <p>Fans can watch pro wrestling action from around the globe and on desktop, tablet, and mobile devices.</p>
-        <a class="btn btn-cta btn-primary" href="http://vod.yourfightsite.com/" rel="external">Visit Your Fight Site <abbr class="initialism" title="Video On Demand">VOD</abbr></a>
-      </div>
-    </div>
+    <ul class="client-list">
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">Revolution Pro Wrestling</span>
+        </a>
+      </li>
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">BAMMA</span>
+        </a>
+      </li>
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">IPW:UK</span>
+        </a>
+      </li>
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">Preston City Wrestling</span>
+        </a>
+      </li>
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">Southside Wrestling</span>
+        </a>
+      </li>
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">LDN Wrestling</span>
+        </a>
+      </li>
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">Premier British Wrestling</span>
+        </a>
+      </li>
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">British Championship Wrestling</span>
+        </a>
+      </li>
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">Big Time Wrestling</span>
+        </a>
+      </li>
+      <li class="client-item">
+        <a class="client-link" href="#">
+          <span class="client-name">Fight Factory Wrestling</span>
+        </a>
+      </li>
+    </ul>
   </div>
-</div>
-
-<div id="news">
-  <div class="container">
-    <header class="text-center">
-      <h1>
-        <span class="text-muted">Latest news from</span>
-        <span>Your Fight Site</span>
-      </h1>
-    </header>
-    <div class="row">
-      {% for post in site.posts offset: 0 limit: 2  %}
-        <div class="col-sm-6">
-          <article class="blog-post" itemscope itemtype="http://schema.org/BlogPosting">
-            <h2 class="blog-post-headline" itemprop="headline">
-              <a href="{{ post.url }}" itemprop="url">{{ post.title }}</a>
-            </h2>
-            <p class="blog-post-published">
-              <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" pubdate>{{ post.date | date_to_long_string }}</time>
-            </p>
-            <p class="blog-post-description" itemprop="description">{{ post.excerpt }}</p>
-          </article>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
+</section>

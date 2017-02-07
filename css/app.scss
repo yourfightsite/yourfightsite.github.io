@@ -1,0 +1,66 @@
+---
+---
+@import "variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+abbr[title] {
+  text-decoration: none;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+.site-header {
+  padding-top: $spacer-y * 3;
+  padding-bottom: $spacer-y * 3;
+}
+
+.navbar-light {
+  .navbar-brand {
+    color: $gray-dark;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    @include hover-focus {
+      color: $brand-primary;
+      text-decoration: none;
+    }
+  }
+}
+
+.site-footer {
+  color: lighten($gray-light, 15%);
+  text-shadow: 0 1px 0 rgba(#000, .3);
+  background-color: $gray-dark;
+  padding-top: $spacer-y * 3;
+  padding-bottom: $spacer-y * 3;
+}
+
+.form-control-label {
+  color: $headings-color;
+  font-weight: 700;
+}
+
+.client-list {
+  @extend .list-inline;
+}
+
+.client-item {
+  @extend .list-inline-item;
+}
+
+#other-services {
+  @include media-breakpoint-up(sm) {
+    article {
+      &:first-child {
+        text-align: left;
+      }
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+}

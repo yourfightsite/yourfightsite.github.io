@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    {% if page.excerpt %}
+      <meta name="description" content="{{ page.excerpt | strip_html }}" />
+    {% endif %}
+    <title>{{ page.title | default: site.title }}</title>
+    <link href="/css/app.css" rel="stylesheet" />
+    <link href="//fonts.googleapis.com/css?family=Libre+Franklin:400,700|Ubuntu:300,700" rel="stylesheet" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  </head>
+  <body>
+    {% include analytics.html %}
+    <header class="site-header" role="banner">
+      <div class="container">
+        <nav class="navbar navbar-toggleable-md navbar-light px-0">
+          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#app-navbar" aria-controls="app-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="/">{{ site.title }}</a>
+          <div class="collapse navbar-collapse" id="app-navbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item{% if page.url == '/web-design/' %} active{% endif %}">
+                <a class="nav-link" href="/web-design">Web Design</a>
+              </li>
+              <li class="nav-item{% if page.url == '/graphic-design/' %} active{% endif %}">
+                <a class="nav-link" href="/graphic-design">Graphic Design</a>
+              </li>
+              <li class="nav-item{% if page.url == '/video-on-demand/' %} active{% endif %}">
+                <a class="nav-link" href="/video-on-demand">
+                  <abbr class="initialism" title="Video On Demand">VOD</abbr>
+                </a>
+              </li>
+            </ul>
+            <form class="form-inline pl-lg-2">
+              <a class="btn btn-primary" data-toggle="modal" href="#quote">Get quote</a>
+            </form>
+            <ul class="navbar-nav pl-lg-2">
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tooltip" data-container=".nav-link" href="https://www.facebook.com/yourfightsite" rel="external" title="{{ site.title }} on Facebook">
+                  <span class="fa fa-facebook"></span>
+                  <span class="sr-only">{{ site.title }} on Facebook</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tooltip" data-container=".nav-link" href="https://twitter.com/yourfightsite" rel="external" title="{{ site.title }} on Twitter">
+                  <span class="fa fa-twitter"></span>
+                  <span class="sr-only">{{ site.title }} on Twitter</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tooltip" data-container=".nav-link" href="https://www.instagram.com/yourfightsite" rel="external" title="{{ site.title }} on Instagram">
+                  <span class="fa fa-instagram"></span>
+                  <span class="sr-only">{{ site.title }} on Instagram</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main role="main">
+      {{ content }}
+    </main>
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <p class="copyright">&copy; {{ "now" | date: "%Y " | append: site.title }}. All rights reserved.</p>
+        <p class="small mb-0">
+          &ldquo;Your Fight Site&rdquo; is a trading name of MCB Web Design <abbr title="Limited">Ltd</abbr>.
+          Company <abbr title="number">&numero;</abbr> 09017111.
+          Registered in England &amp; Wales.
+        </p>
+      </div>
+    </footer>
+    {% include quote.html %}
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/tether.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>

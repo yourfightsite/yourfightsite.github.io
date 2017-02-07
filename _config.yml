@@ -1,26 +1,23 @@
-# Site settings
 title: Your Fight Site
-url: "http://www.yourfightsite.com"
-baseurl: ""
 email: "&#x69;n&#x66;o&#64;y&#x6f;&#117;&#114;&#x66;&#x69;&#x67;&#x68;&#116;s&#x69;&#116;e.&#99;&#x6f;&#x6d;"
-timezone: "Europe/London"
 
-# Build settings
-markdown: kramdown
-permalink: /blog/:year/:month/:day/:title/
+gems:
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+exclude:
+  - CNAME
+  - node_modules
+  - package.json
+
+sass:
+  style: compressed
 
 collections:
   projects:
-    category: "Web Design"
-    industry: "Pro Wrestling"
     output: true
 
-defaults:
-  - scope:
-      path: ""
-      type: projects
-    values:
-      layout: project
-
-gems:
-  - jekyll-redirect-from
+prices:
+  web_design:
+    setup: 199
+    subscription: 4.99

@@ -1,28 +1,25 @@
 ---
-layout: master
+layout: default
 ---
-<article class="container" itemprop="mainEntity" itemscope itemtype="http://schema.org/CreativeWork">
-  <figure>
-    <img src="{{ site.baseurl }}/img/projects/large/{{ page.slug }}.jpg" alt="{{ page.title }}" class="center-block img-responsive" />
-  </figure>
-  <div class="project-details">
-    <h1 class="project-name" itemprop="name">{{ page.client }}</h1>
-    {% if page.website_url %}
-      <p>
-        <span aria-hidden="true" class="fa fa-globe"></span>
-        <a href="http://{{ page.website_url }}" itemprop="url" rel="external">{{ page.website_url }}</a>
-      </p>
-    {% endif %}
+<article class="project" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="container">
+    <header class="page-header">
+      <h1 class="page-title" itemprop="name">{{ page.title }}</h1>
+    </header>
     <div class="project-description" itemprop="description">
-      {{ page.content }}
+      {{ content }}
     </div>
-    <ul class="pager">
-      <li>
-        <a href="{{ site.baseurl }}/our-work/">
-          <span aria-hidden="true">&larr;</span>
-          Back to projects
+    <div class="text-center">
+      <a class="btn btn-secondary" href="/web-design">
+        <span aria-hidden="true">&larr;</span>
+        <span class="btn-text">Back to web design</span>
+      </a>
+      {% if page.website_url %}
+        <a class="btn btn-primary" href="{{ page.website_url }}" rel="external" itemprop="url">
+          <span class="btn-text">Visit {{ page.title }} website</span>
+          <span aria-hidden="true">&rarr;</span>
         </a>
-      </li>
-    </ul>
+      {% endif %}
+    </div>
   </div>
 </article>

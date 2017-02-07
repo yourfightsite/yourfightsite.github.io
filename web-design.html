@@ -1,0 +1,42 @@
+---
+excerpt: A selection of our wrestling &amp; MMA clients and the web design projects we’ve worked on for them.
+layout: default
+permalink: /web-design/
+title: Wrestling web design &amp; MMA web design
+---
+<div class="container">
+  <header class="page-header">
+    <h1 class="page-title">Web Design</h1>
+  </header>
+  <p class="lead">A selection of our wrestling and <abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> clients and the web design projects we’ve worked on for them.</p>
+  <h2>How much does a wrestling/<abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> website cost?</h2>
+  <p>Our pricing is simple and transparent:</p>
+  <dl>
+    <dt>Set-up fee:</dt>
+    <dd>&pound;{{ site.prices.web_design.setup | round }}</dd>
+    <dt>Subscription:</dt>
+    <dd>&pound;{{ site.prices.web_design.subscription | round: 2 }}<small>/month</small></dd>
+  </dl>
+  <p>Subscription price also includes cloud web hosting at no extra cost.</p>
+  <h2>How long does a wrestling/<abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> website take to make?</h2>
+  <p>We aim to design, develop, and launch your wrestling/<abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> website in <strong>four weeks</strong>.</p>
+</div>
+<section id="projects">
+  <div class="container">
+    <ul class="project-list">
+      {% for project in site.projects %}
+        {% if project.type == "Web Design" %}
+          <li class="project-item">
+            <a class="project-link" href="{{ project.url }}">
+              <span class="project-name">{{ project.title }}</span>
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+<div class="container">
+  <a class="btn btn-block btn-primary" href="mailto:{{ site.email }}">Order your wrestling website now</a>
+  {% include other-services.html exclude="Web Design" %}
+</div>
