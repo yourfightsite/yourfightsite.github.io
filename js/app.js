@@ -53,7 +53,7 @@ $(document).ready(function () {
   $('a[rel*="external"]').on('click', function (e) {
     e.preventDefault();
 
-    window.open(e.target.href);
+    window.open(this.href);
   });
 
   $('[data-toggle="tooltip"]').tooltip();
