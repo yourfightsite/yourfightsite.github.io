@@ -244,3 +244,65 @@ strong {
 .client-name {
   @extend .sr-only;
 }
+
+.faq {
+  &-question {
+    font-size: $font-size-h5;
+  }
+}
+
+.pricing {
+  @include list-unstyled;
+  @include clearfix;
+  background-color: $card-bg;
+  display: block;
+  border: $card-border-width solid $card-border-color;
+  border-radius: $card-border-radius;
+  box-shadow: 0 .1rem .2rem rgba(#000, .075);
+
+  &-item {
+    display: block;
+    padding: $card-spacer-x;
+    border-top: $card-border-width solid $card-border-color;
+
+    &:first-child {
+      border: 0;
+    }
+
+    @include media-breakpoint-up(sm) {
+      width: 50%;
+      float: left;
+      border-top: 0;
+      border-left: $card-border-width solid $card-border-color;
+    }
+  }
+
+  &-label,
+  &-value {
+    font-weight: bold;
+    line-height: 1.25;
+    display: block;
+  }
+
+  &-value {
+    font-size: $font-size-h2;
+
+    small {
+      font-size: 50%;
+      font-weight: 400;
+    }
+  }
+}
+
+.blockquote-testimonial {
+  border-left: 0;
+  padding-left: 0;
+
+  .highlight {
+    @extend .mark;
+  }
+}
+
+.img-thumbnail-shadow {
+  box-shadow: 0 .1rem .2rem rgba(#000, .075);
+}

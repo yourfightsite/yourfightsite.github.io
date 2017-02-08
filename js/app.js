@@ -59,4 +59,14 @@ $(document).ready(function () {
   $('[data-toggle="tooltip"]').tooltip();
 
   $('abbr[title]').tooltip();
+
+  $('.btn-cta').on('click', function (e) {
+    e.preventDefault();
+
+    ga('send', 'event', 'CTA', 'click', e.target.text, {
+      hitCallback: function () {
+        location.href = e.target.href;
+      }
+    });
+  });
 });

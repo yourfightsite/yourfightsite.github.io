@@ -7,42 +7,104 @@ redirect_from:
   - /wrestling-web-design/
 title: Wrestling web design &amp; MMA web design
 ---
-<div class="container">
-  <header class="page-header">
-    <h1 class="page-title">Web Design</h1>
-  </header>
-  <p class="lead">A selection of our wrestling and <abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> clients and the web design projects we’ve worked on for them.</p>
-  <h2>How much does a wrestling/<abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> website cost?</h2>
-  <p>Our pricing is simple and transparent:</p>
-  <dl>
-    <dt>Set-up fee:</dt>
-    <dd>&pound;{{ site.prices.web_design.setup | round }}</dd>
-    <dt>Subscription:</dt>
-    <dd>&pound;{{ site.prices.web_design.subscription | round: 2 }}<small>/month</small></dd>
-  </dl>
-  <p>Subscription price also includes cloud web hosting at no extra cost.</p>
-  <h2>How long does a wrestling/<abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> website take to make?</h2>
-  <p>We aim to design, develop, and launch your wrestling/<abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> website in <strong>four weeks</strong>.</p>
-</div>
-<section class="bg-faded pt-4 pb-2" id="projects">
-  <div class="container">
+<section class="hero mb-4" id="product">
+  <div class="container text-center">
     <header>
-      <h1>Web design portfolio</h1>
-      <p class="lead">Our latest wrestling and <abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> web design projects.</p>
+      <h1 class="hero-title">Let us take the hassle out of managing your wrestling/<abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> website.</h1>
+      <p class="lead">
+        For <strong>over 10 years</strong>, we’ve been building websites to help wrestling and <abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> promoters like <strong>you</strong>.
+        We’ve now distilled that <strong>experience</strong> and <strong>knowledge</strong> into an all-in-one website platform.
+      </p>
     </header>
-    <ul class="project-list">
-      {% for project in site.projects %}
-        {% if project.type == "Web Design" %}
-          <li class="project-item">
-            <a class="card card-inverse card-project mb-3 mb-sm-4" href="{{ project.url }}">
-              <img src="/img/projects/small/{{ project.title | slugify }}.jpg" alt="{{ project.title }} website screen-shot" class="card-img img-fluid" />
-              <div class="card-img-overlay">
-                <h1 class="card-title project-name">{{ project.title }}</h1>
-              </div>
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
+    <a class="btn btn-cta btn-lg btn-primary" href="mailto:{{ site.email }}?subject={{ 'I want a website' | uri_escape }}">Let’s get started</a>
+  </div>
+</section>
+
+<section id="testimonials">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+        <blockquote class="blockquote blockquote-testimonial" cite="https://www.facebook.com/HLoeve/posts/10154932284387053">
+          <p><span class="highlight">Fast, reliable, and friendly</span> service. <span class="highlight">Very efficient and helpful</span>.</p>
+          <footer class="blockquote-footer">Hayden Loeve, Fight Factory Wrestling</footer>
+        </blockquote>
+        <blockquote class="blockquote blockquote-testimonial">
+          <p>
+            I engaged Martin [at Your Fight Site] to build a website for Southside Wrestling in 2011 and was <span class="highlight">very happy with service, product, and price</span>.
+            Being very novice at the time, Martin happily answered any of my questions but still asked for my involvement to make sure that I was happy with the end product.
+            Martin is still on hand now if I need any help and <span class="highlight">I happily recommend him</span>.
+          </p>
+          <footer class="blockquote-footer">Ben Auld, Southside Wrestling</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mb-4" id="pricing">
+  <div class="container">
+    <div class="text-center">
+      <header>
+        <h1>How much does a wrestling/<abbr class="initialism" title="Mixed Martial Arts">MMA</abbr> website cost?</h1>
+      </header>
+      <p class="lead">
+        Our pricing is fair and transparent.
+        No hidden charges or extras.
+      </p>
+      <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+          <ul class="pricing mb-4">
+            <li class="pricing-item">
+              <span class="pricing-label">Design and set-up:</span>
+              <span class="pricing-value">&pound;199</span>
+            </li>
+            <li class="pricing-item">
+              <span class="pricing-label">And then:</span>
+              <span class="pricing-value">&pound;4.99<small>/month</small></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="btn btn-cta btn-lg btn-primary" href="mailto:{{ site.email }}?subject={{ 'I want a website' | uri_escape }}">Let’s get started!</a>
+    </div>
+  </div>
+</section>
+
+<section class="mb-5" id="faqs">
+  <div class="container">
+    <header class="text-center">
+      <h1 class="h3 mb-3">Common questions</h1>
+    </header>
+    <div class="row">
+      <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2">
+        <article class="faq">
+          <h1 class="faq-question">How long will my website take to make?</h1>
+          <div class="faq-answer">
+            <p>
+              We aim to have your website designed, built, and launched in <strong>four weeks</strong>.
+              This does depend on your input at key stages though.
+            </p>
+          </div>
+        </article>
+        <article class="faq">
+          <h1 class="faq-question">Do I need web hosting?</h1>
+          <div class="faq-answer">
+            <p>
+              <strong>No.</strong> The monthly subscription price of our website platform covers hosting.
+              Your website’s securely hosted on cloud infrastructure so won’t go down, even on busy event days!
+            </p>
+          </div>
+        </article>
+        <article class="faq">
+          <h1 class="faq-question">What about a domain name?</h1>
+          <div class="faq-answer">
+            <p class="mb-0">
+              <strong>Yes.</strong> You can either use a domain you already have, or register a new one on your behalf.
+              If using an existing domain, we’ll guide you through configuring it to point it to your new website.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
   </div>
 </section>
