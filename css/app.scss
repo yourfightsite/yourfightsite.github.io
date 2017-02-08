@@ -161,6 +161,11 @@ strong {
 .card-service {
   @extend .card-project;
 
+  .card-img {
+    width: 100%;
+    height: auto;
+  }
+
   .card-title {
     @include media-breakpoint-up(xl) {
       font-size: $font-size-h1;
