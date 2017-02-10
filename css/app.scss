@@ -30,6 +30,11 @@ strong {
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    padding-left: 45px;
+    background-image: url(../img/logo@2x.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 35px 30px;
 
     @include hover-focus {
       color: $brand-primary;
