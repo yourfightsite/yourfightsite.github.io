@@ -345,3 +345,54 @@ strong {
 .btn-lg {
   white-space: normal;
 }
+
+.offer-black-friday {
+  del {
+    font-weight: 300;
+  }
+
+  ins {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+body.inverse {
+  color: $white;
+  background-color: $black;
+  background-image: none;
+
+  h1 {
+    color: $white;
+  }
+
+  .navbar-light {
+    .navbar-nav .nav-link {
+      color: rgba($white, .5);
+      text-shadow: none;
+
+      @include hover-focus {
+        color: rgba($white, .7);
+      }
+    }
+  }
+
+  .navbar-brand {
+    color: #fff;
+    text-shadow: none;
+
+    @include hover-focus-active {
+      color: #f44336;
+    }
+  }
+
+  .modal {
+    color: $body-color;
+  }
+
+  .site-footer {
+    color: $text-muted;
+    text-align: center;
+    background-color: transparent;
+  }
+}

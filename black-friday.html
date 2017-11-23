@@ -1,0 +1,51 @@
+---
+body_class: inverse
+excerpt: "Black Friday offer: 50% off website setup fee, plus 3 months free hosting! Redeem today only."
+layout: default
+title: Your Fight Site Black Friday offer
+---
+<div class="container text-center">
+  <article class="offer offer-black-friday text-center mb-4" itemscope itemtype="http://schema.org/Offer">
+    <meta itemprop="availabilityStarts" content="2017-11-24T00:00:00+00:00" />
+    <meta itemprop="availabilityEnds" content="2017-11-24T23:59:59+00:00" />
+    <h1 itemprop="name">Black Friday offer</h1>
+    <p class="lead">
+      Get <strong>50% off</strong> our website setup fee.<br />
+      <del class="text-muted">&pound;199</del>
+      <ins class="font-weight-bold" itemprop="price" itemscope itemtype="http://schema.org/PriceSpecification">
+        <meta itemprop="price" content="99.00" />
+        <meta itemprop="priceCurrency" content="GBP" />
+        <meta itemprop="priceValidUntil" content="2017-11-24T23:59:59+00:00" />
+        <meta itemprop="validFrom" content="2017-11-24T00:00:00+00:00" />
+        <meta itemprop="validThrough" content="2017-11-24T23:59:59+00:00" />
+        <span>&pound;99</span>
+      </ins>
+    </p>
+    <p>Plus <strong class="font-weight-bold">3 months free</strong> hosting</p>
+    <p itemprop="description">Pay your deposit via <em>PayPal</em> now, and we’ll get in touch to get your website started.</p>
+    <div class="mb-4">
+      <a class="btn btn-lg btn-primary" href="https://www.paypal.me/yourfightsite/99gbp" id="redeem-offer" itemprop="url">
+        <span class="btn-text">Redeem offer</span>
+      </a>
+    </div>
+    <footer class="text-muted">
+      <small>
+        Deposit must be paid before
+        <time datetime="2017-11-24T23:59+00:00">
+          23:59 <abbr class="initialism" title="Greenwich Mean Time">GMT</abbr>
+          on Friday, 24 November 2017.
+        </time>
+      </small>
+    </footer>
+  </article>
+</div>
+<script>
+  document.getElementById('redeem-offer').addEventListener('click', function (event) {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Buttons',
+      eventAction: 'click',
+      eventLabel: 'Black Friday redeem offer'
+    });
+  });
+</script>
