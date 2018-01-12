@@ -48,6 +48,8 @@ $(document).ready(function () {
       eventAction: 'submit',
       eventLabel: 'Get quote'
     });
+    
+    fbq('track', 'Lead');
   });
 
   $('a[rel*="external"]').on('click', function (e) {
