@@ -14,16 +14,30 @@ $(document).ready(function () {
     $quoteEmail.focus();
   });
 
-  $quote.find('input').on('change click keyup', function (e) {
+  $quote.find(':input').on('change click keyup', function (e) {
     var valid = (
       $quoteEmail.val().trim().length > 0 &&
       $quoteServices.filter(':checked').length > 0
     );
 
-    $quoteBtn.prop('disabled', ! valid);
+    $quoteBtn.prop('disabled', !valid);
   });
 
   $quote.on('show.bs.modal', function (e) {
+    var $trigger = $(e.relatedTarget);
+
+    if ($trigger.attr('data-services')) {
+      var services = $trigger.attr('data-services').split(' ');
+
+      $.each(services, function (index, service) {
+        var $checkbox = $quote.find('[data-service="' + service + '"]');
+
+        if ($checkbox) {
+          $checkbox.prop('checked', true).trigger('change');
+        }
+      });
+    }
+
     ga('send', {
       hitType: 'event',
       eventCategory: 'Modals',
@@ -48,7 +62,7 @@ $(document).ready(function () {
       eventAction: 'submit',
       eventLabel: 'Get quote'
     });
-    
+
     fbq('track', 'Lead');
   });
 

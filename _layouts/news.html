@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <main role="main">
+        {{ content }}
+      </main>
+    </div>
+    <div class="col-lg-4">
+      <aside role="complementation">
+        <section id="tags">
+          <h1 class="h3">Posts by product</h1>
+          {% assign sorted_tags = site.tags | sort %}
+          {% for tag in sorted_tags %}
+            <article id="tag-{{ tag[0] | slugify }}">
+              <h1 class="h5">
+                {% if tag[0] == "cms"  %}
+                  <abbr class="initialism" title="Content Management System">CMS</abbr>
+                {% elsif tag[0] == "vod" %}
+                  <abbr class="initialism" title="Video On Demand">VOD</abbr>
+                {% else %}
+                  <span>{{ tag[0] | capitalize }}</span>
+                {% endif %}
+              </h1>
+              <ul class="list-unstyled">
+                {% for post in tag[1] %}
+                  <li class="mb-2">
+                    <div>
+                      <a href="{{ post.url }}">
+                        <span>{{ post.title }}</span>
+                      </a>
+                    </div>
+                    <div class="small text-muted">
+                      <time datetime="{{ post.date | date_to_xmlschema }}" pubdate>{{ post.date | date_to_string }}</time>
+                    </div>
+                  </li>
+                {% endfor %}
+              </ul>
+            </article>
+          {% endfor %}
+        </section>
+      </aside>
+    </div>
+  </div>
+</div>

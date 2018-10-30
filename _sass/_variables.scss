@@ -1,14 +1,16 @@
 $enable-shadows: true;
 $enable-animation: false;
 
-$gray-dark: #292b2c;
-$gray: #464a4c;
+$gray-dark: #22292f;
+$gray: #3d4852;
 
 $lead-font-weight: 400;
 
-$brand-primary: #c00;
+$brand-primary: #e3342f;
 
 $body-color: $gray;
+
+$text-muted: #8795a1;
 
 $font-family-sans-serif: "Libre Franklin", sans-serif;
 
@@ -25,3 +27,5 @@ $thumbnail-border-width: 1rem;
 $thumbnail-border-color: #fff;
 $thumbnail-border-radius: .1rem;
 $thumbnail-box-shadow: 0 .1rem 1rem rgba(#000, .1);
+
+$btn-font-weight: 500;

@@ -1,0 +1,23 @@
+---
+excerpt: "News and updates from Your Fight Site."
+layout: news
+title: "Your Fight Site News"
+---
+<h1>News</h1>
+{% for post in site.posts %}
+  <article itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="h3">
+        <a href="{{ post.url }}" itemprop="url">
+          <span itemprop="headline">{{ post.title }}</span>
+        </a>
+      </h1>
+    </header>
+    <footer>
+      <p>
+        <time class="text-muted" datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished" pubdate>{{ post.date | date_to_long_string }}</time>
+      </p>
+    </footer>
+    <p itemprop="description">{{ post.excerpt }}</p>
+  </article>
+{% endfor %}

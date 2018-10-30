@@ -1,17 +1,22 @@
 ---
-layout: default
+layout: news
 ---
-<div class="container">
-  <div class="row">
-    <div class="col-md-8">
-      <article itemscope itemtype="http://schema.org/BlogPosting">
-        <header class="page-header">
-          <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
-        </header>
-        <div itemprop="articleBody">
-          {{ content }}
-        </div>
-      </article>
-    </div>
+<article itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h1 itemprop="headline">{{ page.title }}</h1>
+  </header>
+  <footer class="text-muted">
+    <p>
+      Published
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" pubdate>{{ page.date | date_to_long_string }}</time>
+      by
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="givenName">Martin</span>
+        <span itemprop="familyName">Bean</span>
+      </span>
+    </p>
+  </footer>
+  <div itemprop="articleBody">
+    {{ content }}
   </div>
-</div>
+</article>

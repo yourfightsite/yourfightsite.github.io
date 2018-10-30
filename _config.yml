@@ -1,7 +1,7 @@
 title: Your Fight Site
 email: "&#x69;n&#x66;o&#64;y&#x6f;&#117;&#114;&#x66;&#x69;&#x67;&#x68;&#116;s&#x69;&#116;e.&#99;&#x6f;&#x6d;"
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-redirect-from
 
@@ -19,5 +19,15 @@ collections:
 
 prices:
   web_design:
-    setup: 199
+    setup: 99
     subscription: 4.99
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+
+permalink: "/news/:year/:month/:day/:slug"
