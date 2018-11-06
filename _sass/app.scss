@@ -415,18 +415,21 @@ body.inverse {
   }
 
   &-details {
-    padding-left: 7.5rem;
     overflow: auto;
 
-    > dt,
-    > dd {
-      float: left;
-    }
+    @include media-breakpoint-up(lg) {
+      padding-left: 7.5rem;
 
-    > dt {
-      width: 7.5rem;
-      margin-left: -7.5rem;
-      clear: left;
+      > dt,
+      > dd {
+        float: left;
+      }
+
+      > dt {
+        width: 7.5rem;
+        margin-left: -7.5rem;
+        clear: left;
+      }
     }
 
     &:last-child {
@@ -443,7 +446,9 @@ body.inverse {
   }
 
   &-opening-hours {
-    margin-left: 2.5rem;
+    margin-bottom: 0;
+    padding-left: 2.5rem;
+    overflow: auto;
 
     > dt,
     > dd {
