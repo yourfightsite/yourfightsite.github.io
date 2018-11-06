@@ -401,3 +401,71 @@ body.inverse {
     background-color: transparent;
   }
 }
+
+.infowindow {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-sm;
+  line-height: $line-height-base;
+  padding: .5rem .25rem;
+}
+
+.infowindow-training-school {
+  max-width: 25rem;
+
+  &-name {
+    font-size: $font-size-h4;
+  }
+
+  &-details {
+    padding-left: 7.5rem;
+    overflow: auto;
+
+    > dt,
+    > dd {
+      float: left;
+    }
+
+    > dt {
+      width: 7.5rem;
+      margin-left: -7.5rem;
+      clear: left;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-description {
+    margin-bottom: .5rem;
+
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-opening-hours {
+    margin-left: 6rem;
+
+    > dt,
+    > dd {
+      float: left;
+    }
+
+    > dt {
+      color: $text-muted;
+      font-weight: 400;
+      width: 6rem;
+      margin-left: -6rem;
+      clear: left;
+    }
+
+    > dd {
+      margin-bottom: .25rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

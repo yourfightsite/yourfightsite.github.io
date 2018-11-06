@@ -17,6 +17,9 @@ collections:
   projects:
     output: true
 
+  training_schools:
+    output: false
+
 prices:
   web_design:
     setup: 99
@@ -29,5 +32,11 @@ defaults:
       type: "posts"
     values:
       layout: post
+  -
+    scope:
+      path: ""
+      type: "training_schools"
+    values:
+      country: GB
 
 permalink: "/news/:year/:month/:day/:slug"
