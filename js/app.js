@@ -38,30 +38,26 @@ $(document).ready(function () {
       });
     }
 
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Modals',
-      eventAction: 'show',
-      eventLabel: 'Get quote'
+    gtag('event', 'show', {
+      event_category: 'Modals',
+      event_label: 'Get quote'
     });
   });
 
   $quote.on('hide.bs.modal', function (e) {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Modals',
-      eventAction: 'hide',
-      eventLabel: 'Get quote'
+    gtag('event', 'hide', {
+      event_category: 'Modals',
+      event_label: 'Get quote'
     });
   });
 
   $quote.on('submit', function (e) {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Forms',
-      eventAction: 'submit',
-      eventLabel: 'Get quote'
+    gtag('event', 'submit', {
+      event_category: 'Forms',
+      event_label: 'Get quote'
     });
+
+    gtag('event', 'generate_lead');
 
     fbq('track', 'Lead');
   });
@@ -79,10 +75,8 @@ $(document).ready(function () {
   $('.btn-cta').on('click', function (e) {
     e.preventDefault();
 
-    ga('send', 'event', 'CTA', 'click', e.target.text, {
-      hitCallback: function () {
-        location.href = e.target.href;
-      }
+    gtag('event', 'click', {
+      event_category: 'CTA'
     });
   });
 });

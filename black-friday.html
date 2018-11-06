@@ -40,12 +40,14 @@ title: Your Fight Site Black Friday offer
   </article>
 </div>
 <script>
+  gtag('event', 'view_promotion', {
+    event_label: 'Black Friday'
+  });
+
   document.getElementById('redeem-offer').addEventListener('click', function (event) {
-    ga('send', {
-      hitType: 'event',
-      eventCategory: 'Buttons',
-      eventAction: 'click',
-      eventLabel: 'Black Friday redeem offer'
+    gtag('event', 'click', {
+      event_category: 'Buttons',
+      event_label: 'Black Friday redeem offer'
     });
   });
 </script>

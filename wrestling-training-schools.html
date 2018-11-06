@@ -148,6 +148,15 @@ title: "Wrestling Training Schools & Academies"
         marker.addListener('click', function () {
           infoWindow.setContent(getContent(trainingSchool));
           infoWindow.open(map, marker);
+
+          gtag('config', '{{ site.analytics_id }}', {
+            page_path: trainingSchool.url,
+            page_title: trainingSchool.title
+          });
+
+          gtag('event', 'view_item', {
+            event_label: trainingSchool.title
+          });
         });
 
         marker.addListener('mouseover', function () {
@@ -171,6 +180,10 @@ title: "Wrestling Training Schools & Academies"
     }
 
     map.fitBounds(bounds);
+
+    gtag('event', 'view_item_list', {
+      event_label: 'Wrestling Training Schools'
+    });
   }
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZ7bT_qFdVmBKj18l_2vxLtYTnvfR2YDQ&amp;callback=initMap"></script>
