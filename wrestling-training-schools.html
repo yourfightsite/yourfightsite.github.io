@@ -47,6 +47,17 @@ title: "Wrestling Training Schools & Academies"
     });
     var bounds = new google.maps.LatLngBounds();
     var infoWindow = new google.maps.InfoWindow;
+    var defaultIcon = {
+      scaledSize: {
+        height: 24,
+        width: 24
+      },
+      size: {
+        height: 24,
+        width: 24
+      },
+      url: '/img/map-marker.png'
+    };
 
     function getContent(trainingSchool) {
       var address = [
@@ -127,15 +138,34 @@ title: "Wrestling Training Schools & Academies"
       (function (trainingSchool) {
         var position = new google.maps.LatLng(trainingSchool.lat, trainingSchool.lng);
         var marker = new google.maps.Marker({
+          icon: defaultIcon,
           map: map,
-          position: position,
+          position: position
         });
 
         bounds.extend(position);
 
-        marker.addListener('click', function (event) {
+        marker.addListener('click', function () {
           infoWindow.setContent(getContent(trainingSchool));
           infoWindow.open(map, marker);
+        });
+
+        marker.addListener('mouseover', function () {
+          marker.setIcon({
+            scaledSize: {
+              height: 24,
+              width: 24
+            },
+            size: {
+              height: 24,
+              width: 24
+            },
+            url: '/img/map-marker-hover.png'
+          });
+        });
+
+        marker.addListener('mouseout', function () {
+          marker.setIcon(defaultIcon);
         });
       })(trainingSchools[i]);
     }
