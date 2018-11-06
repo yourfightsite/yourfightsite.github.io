@@ -83,7 +83,7 @@ title: "Wrestling Training Schools & Academies"
 
         for (var day in trainingSchool.opening_hours) {
           (function (openingHours) {
-            content += '<dt>' + day + '</dt>' +
+            content += '<dt><abbr title="' + day + '">' + day.substring(0, 3) + '</abbr></dt>' +
               '<dd>' +
               '<ul class="list-unstyled m-0">';
 

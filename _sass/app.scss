@@ -443,7 +443,7 @@ body.inverse {
   }
 
   &-opening-hours {
-    margin-left: 6rem;
+    margin-left: 2.5rem;
 
     > dt,
     > dd {
@@ -453,8 +453,8 @@ body.inverse {
     > dt {
       color: $text-muted;
       font-weight: 400;
-      width: 6rem;
-      margin-left: -6rem;
+      width: 2.5rem;
+      margin-left: -2.5rem;
       clear: left;
     }
 
