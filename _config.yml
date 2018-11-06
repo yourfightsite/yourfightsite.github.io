@@ -19,6 +19,7 @@ collections:
 
   training_schools:
     output: false
+    permalink: /wrestling-training-schools/:name
 
 prices:
   web_design:
