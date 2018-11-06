@@ -44,6 +44,9 @@ title: "Wrestling Training Schools & Academies"
     var britishIsles = new google.maps.LatLng(54.985789, -4.411267);
     var map = new google.maps.Map(document.getElementById('map'), {
       center: britishIsles,
+      fullscreenControl: false,
+      mapTypeControl: false,
+      streetViewControl: false,
       zoom: 4
     });
     var bounds = new google.maps.LatLngBounds();
