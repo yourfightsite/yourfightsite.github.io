@@ -12,7 +12,7 @@ website: https://www.fulltiltwrestling.co.uk/ftw-academy
 social:
   facebook: https://www.facebook.com/fulltiltwrestling
   twitter: https://twitter.com/ftwnewcastle
-opening_times:
+opening_hours:
   Monday:
     -
       opens: "10:00"

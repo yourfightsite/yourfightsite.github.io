@@ -12,7 +12,7 @@ social:
   facebook: https://www.facebook.com/Fight-Club-PRO-234516669556
   twitter: https://twitter.com/fightclubpro
   instagram: https://www.instagram.com/fightclubpro
-opening_times:
+opening_hours:
   Tuesday:
     -
       opens: "18:30"

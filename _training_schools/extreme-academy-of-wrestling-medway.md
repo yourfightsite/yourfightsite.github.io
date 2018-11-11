@@ -11,7 +11,7 @@ telephone: 01634719867
 email: extrememaidstone@gmail.com
 social:
   facebook: https://www.facebook.com/extrememedway
-opening_times:
+opening_hours:
   Saturday:
     -
       opens: "12:00"

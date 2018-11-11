@@ -9,7 +9,7 @@ lat: 52.472606
 lng: -1.90375
 telephone: 01216223737
 email: kamikazepro@outlook.com
-opening_times:
+opening_hours:
   Monday:
     -
       opens: "19:00"

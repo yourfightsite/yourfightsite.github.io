@@ -11,7 +11,7 @@ telephone: 07506469527
 website: http://www.eww-wrestling.com/training
 social:
   facebook: https://www.facebook.com/extrememaidstone
-opening_times:
+opening_hours:
   Thursday:
     -
       opens: "20:30"

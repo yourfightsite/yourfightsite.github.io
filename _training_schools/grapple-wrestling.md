@@ -7,7 +7,7 @@ postal_code: LS27 0BP
 country: GB
 lat: 53.735228
 lng: -1.610326
-opening_times:
+opening_hours:
   Thursday:
     -
       opens: "18:00"
