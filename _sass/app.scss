@@ -430,10 +430,10 @@ body.inverse {
         margin-left: -7.5rem;
         clear: left;
       }
-    }
 
-    &:last-child {
-      margin-bottom: 0;
+      > dd:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 

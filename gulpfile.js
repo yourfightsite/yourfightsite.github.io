@@ -1,15 +1,17 @@
-var gulp = require('gulp');
-var notify = require('gulp-notify');
-var sass = require('gulp-sass');
-var sourcemaps = require('gulp-sourcemaps');
+'use strict';
 
-var config = {
+let gulp = require('gulp');
+let notify = require('gulp-notify');
+let sass = require('gulp-sass');
+let sourcemaps = require('gulp-sourcemaps');
+
+let config = {
   sass: {
     outputStyle: 'compressed'
   }
 };
 
-gulp.task('sass', function () {
+gulp.task('sass', () => {
   return gulp.src('./_sass/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(config.sass))
@@ -18,8 +20,10 @@ gulp.task('sass', function () {
     .pipe(notify('CSS has been compiled.'));
 });
 
-gulp.task('watch', function () {
-  gulp.watch('./_sass/*.scss', ['sass']);
+gulp.task('watch', () => {
+  return gulp.watch('./_sass/**/*.scss', gulp.series('sass'));
 });
 
-gulp.task('default', ['sass', 'watch']);
+gulp.task('build', gulp.series('sass'));
+
+gulp.task('default', gulp.series('build', 'watch'));
