@@ -16,13 +16,13 @@ strong {
 }
 
 .site-header {
-  padding-top: $spacer-y * 3;
-  padding-bottom: $spacer-y * 3;
+  padding-top: $spacer * 3;
+  padding-bottom: $spacer * 3;
 }
 
 .navbar-light {
   .navbar-brand {
-    color: $gray-dark;
+    color: $dark;
     font-family: "Ubuntu", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -33,38 +33,38 @@ strong {
     background-size: 35px 30px;
 
     @include hover-focus {
-      color: $brand-primary;
+      color: $primary;
       text-decoration: none;
     }
   }
 
   .navbar-brand,
   .navbar-nav {
-    text-shadow: 0 .075rem 0 #fff;
+    text-shadow: 0 .075rem 0 $white;
   }
 
   .navbar-toggler {
-    background-color: #fff;
+    background-color: $white;
   }
 }
 
 .site-footer {
-  color: lighten($gray-light, 15%);
-  text-shadow: 0 1px 0 rgba(#000, .3);
-  background-color: $gray-dark;
-  padding-top: $spacer-y * 3;
-  padding-bottom: $spacer-y * 3;
+  color: lighten($gray-200, 15%);
+  text-shadow: 0 1px 0 rgba($black, .3);
+  background-color: $dark;
+  padding-top: $spacer * 3;
+  padding-bottom: $spacer * 3;
 }
 
 .jumbotron-home {
-  background-color: $gray-dark;
+  background-color: $dark;
 
   h1 {
-    color: $gray-lightest;
-    text-shadow: 0 .1rem .1rem rgba(#000, .6);
+    color: $gray-100;
+    text-shadow: 0 .1rem .1rem rgba($black, .6);
 
     strong {
-      color: #fff;
+      color: $white;
       font-weight: inherit;
     }
   }
@@ -104,8 +104,8 @@ strong {
 
 .project-item {
   @include make-col(12);
-  padding-right: $grid-gutter-width-base / 2;
-  padding-left: $grid-gutter-width-base / 2;
+  padding-right: $grid-gutter-width / 2;
+  padding-left: $grid-gutter-width / 2;
 
   @include media-breakpoint-up(md) {
     @include make-col(6);
@@ -123,32 +123,32 @@ strong {
   overflow: hidden;
 
   .card-img-overlay {
-    text-shadow: 0 .1rem .1rem rgba(#000, .6);
-    background-color: rgba(#000, .8);
+    text-shadow: 0 .1rem .1rem rgba($black, .6);
+    background-color: rgba($black, .8);
     opacity: 1;
-    box-shadow: inset 0 0 5rem rgba(#000, .3);
+    box-shadow: inset 0 0 5rem rgba($black, .3);
     @include transition(opacity .3s);
   }
 
   .card-title {
-    font-size: $font-size-h4;
+    font-size: $h4-font-size;
 
     @include media-breakpoint-up(md) {
-      font-size: $font-size-h3;
+      font-size: $h3-font-size;
     }
 
     @include media-breakpoint-up(lg) {
-      font-size: $font-size-h2;
+      font-size: $h2-font-size;
     }
   }
 
   @include plain-hover-focus {
     .card-title {
-      color: #fff;
+      color: $white;
     }
 
     .card-text {
-      color: rgba(#fff, .6);
+      color: rgba($white, .6);
     }
   }
 
@@ -169,7 +169,7 @@ strong {
 
   .card-title {
     @include media-breakpoint-up(xl) {
-      font-size: $font-size-h1;
+      font-size: $h1-font-size;
     }
   }
 }
@@ -186,8 +186,8 @@ strong {
   }
 
   &:not(:last-child) {
-    margin-right: $spacer-x;
-    margin-bottom: $spacer-y;
+    margin-right: $spacer;
+    margin-bottom: $spacer;
   }
 
   &-bamma {
@@ -203,11 +203,6 @@ strong {
   &-british-championship-wrestling {
     background-image: url(../img/clients/british-championship-wrestling.png);
     width: 103px;
-  }
-
-  &-british-wrestling-revolution {
-    background-image: url(../img/clients/british-wrestling-revolution.png);
-    width: 235px;
   }
 
   &-fight-factory-wrestling {
@@ -273,7 +268,7 @@ strong {
 
 .faq {
   &-question {
-    font-size: $font-size-h5;
+    font-size: $h5-font-size;
   }
 }
 
@@ -285,7 +280,7 @@ strong {
   display: block;
   border: $card-border-width solid $card-border-color;
   border-radius: $card-border-radius;
-  box-shadow: 0 .1rem .2rem rgba(#000, .075);
+  box-shadow: 0 .1rem .2rem rgba($black, .075);
 
   &-item {
     display: block;
@@ -317,7 +312,7 @@ strong {
   }
 
   &-value {
-    font-size: $font-size-h2;
+    font-size: $h2-font-size;
 
     small {
       font-size: 50%;
@@ -381,11 +376,11 @@ body.inverse {
   }
 
   .navbar-brand {
-    color: #fff;
+    color: $white;
     text-shadow: none;
 
     @include hover-focus-active {
-      color: #f44336;
+      color: $primary;
     }
   }
 
@@ -411,7 +406,7 @@ body.inverse {
   max-width: 25rem;
 
   &-name {
-    font-size: $font-size-h4;
+    font-size: $h4-font-size;
   }
 
   &-details {

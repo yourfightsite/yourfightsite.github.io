@@ -1,28 +1,27 @@
 $enable-shadows: true;
-$enable-animation: false;
+$enable-transitions: false;
 
-$gray-dark: #22292f;
-$gray: #3d4852;
+$dark: #22292f;
 
 $lead-font-weight: 400;
 
-$brand-primary: #e3342f;
+$primary: #e3342f;
 
-$body-color: $gray;
+$body-color: #3d4852;
 
 $text-muted: #8795a1;
 
 $font-family-sans-serif: "Libre Franklin", sans-serif;
 
-$headings-color: $gray-dark;
+$headings-color: $dark;
 $headings-font-weight: 700;
 
-$input-border-focus: $brand-primary;
+$input-border-focus: $primary;
 
 $modal-backdrop-opacity: .8;
 
 $thumbnail-padding: 0;
-$thumbnail-bg: $gray;
+$thumbnail-bg: $body-color;
 $thumbnail-border-width: 1rem;
 $thumbnail-border-color: #fff;
 $thumbnail-border-radius: .1rem;
