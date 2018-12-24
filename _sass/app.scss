@@ -1,60 +1,7 @@
 @import "variables";
 @import "node_modules/bootstrap/scss/bootstrap";
-
-body {
-  background-image: url(../img/bg.png);
-  background-repeat: repeat;
-}
-
-abbr[title] {
-  text-decoration: none;
-}
-
-b,
-strong {
-  font-weight: 700;
-}
-
-.site-header {
-  padding-top: $spacer * 3;
-  padding-bottom: $spacer * 3;
-}
-
-.navbar-light {
-  .navbar-brand {
-    color: $dark;
-    font-family: "Ubuntu", sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding-left: 45px;
-    background-image: url(../img/logo@2x.png);
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: 35px 30px;
-
-    @include hover-focus {
-      color: $primary;
-      text-decoration: none;
-    }
-  }
-
-  .navbar-brand,
-  .navbar-nav {
-    text-shadow: 0 .075rem 0 $white;
-  }
-
-  .navbar-toggler {
-    background-color: $white;
-  }
-}
-
-.site-footer {
-  color: lighten($gray-200, 15%);
-  text-shadow: 0 1px 0 rgba($black, .3);
-  background-color: $dark;
-  padding-top: $spacer * 3;
-  padding-bottom: $spacer * 3;
-}
+@import "bootstrap-overrides";
+@import "elements";
 
 .jumbotron-home {
   background-color: $dark;

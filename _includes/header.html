@@ -1,0 +1,38 @@
+<header class="site-header py-2 py-lg-3 shadow-sm" role="banner">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="{% link index.html %}">
+        <span class="navbar-brand-text">Your Fight Site</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#app-navbar-content" aria-controls="app-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="app-navbar-content">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link{% if page.url == '/web-design/' %} active{% endif %}" href="{% link web-design.html %}">Web Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link{% if page.url == '/graphic-design/' %} active{% endif %}" href="{% link graphic-design.html %}">Graphic Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link{% if page.url == '/video-on-demand/' %} active{% endif %}" href="{% link video-on-demand.html %}">
+              <abbr class="initialism" title="Video On Demand">VOD</abbr>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="directory-dropdown-menu-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="nav-link-text">Directory</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="directory-dropdown-menu-link">
+              <a class="dropdown-item" href="{% link wrestling-training-schools.html %}">Wrestling Training Schools</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline pl-lg-2">
+          <a class="btn btn-primary d-block d-lg-inline-block mt-2 mt-lg-0 w-100 w-lg-auto" data-toggle="modal" href="#quote">Get quote</a>
+        </form>
+      </div>
+    </nav>
+  </div>
+</header>

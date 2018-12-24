@@ -1,0 +1,26 @@
+.site-header {
+  color: $white;
+  background-color: $black;
+  border-bottom: .25rem solid $primary;
+
+  .navbar-brand-text {
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .nav-link.active {
+    @include media-breakpoint-up(lg) {
+      position: relative;
+
+      &::before {
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        right: .25rem;
+        left: .25rem;
+        border-bottom: .1875rem solid $red;
+      }
+    }
+  }
+}

@@ -1,116 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="format-detection" content="telephone=no" />
     {% if page.excerpt %}
-      <meta name="description" content="{{ page.excerpt | strip_html }}" />
+    <meta name="description" content="{{ page.excerpt | strip_html }}" />
     {% endif %}
     <title>{{ page.title | default: site.title | escape_once }}</title>
     <link href="/css/app.css" rel="stylesheet" />
-    <link href="//fonts.googleapis.com/css?family=Ubuntu:700|Libre+Franklin:300,400,500,700" rel="stylesheet" />
-    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/solid.js" integrity="sha384-Xgf/DMe1667bioB9X1UM5QX+EG6FolMT4K7G+6rqNZBSONbmPh/qZ62nBPfTx+xG" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/brands.js" integrity="sha384-S2C955KPLo8/zc2J7kJTG38hvFV+SnzXM6hwfEUhGHw5wPo6uXbnbjSJgw3clO4G" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.5.0/js/fontawesome.js" integrity="sha384-bNOdVeWbABef8Lh4uZ8c3lJXVlHdf8W5hh1OpJ4dGyqIEhMmcnJrosjQ36Kniaqm" crossorigin="anonymous"></script>
-    <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '941760289311340');
-      fbq('track', 'PageView');
-    </script>
-    <noscript>
-      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=941760289311340&ev=PageView&noscript=1" />
-    </noscript>
+    {% include fonts.html %}
+    {% include font-awesome.html %}
+    {% include facebook-pixel.html %}
   </head>
   <body class="{{ page.body_class }}">
     {% include analytics.html %}
-    <header class="site-header" role="banner">
-      <div class="container">
-        <nav class="navbar navbar-toggleable-md navbar-light px-0">
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#app-navbar" aria-controls="app-navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <a class="navbar-brand" href="/">{{ site.title }}</a>
-          <div class="collapse navbar-collapse" id="app-navbar">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item{% if page.url == '/web-design/' %} active{% endif %}">
-                <a class="nav-link" href="/web-design/">Web Design</a>
-              </li>
-              <li class="nav-item{% if page.url == '/graphic-design/' %} active{% endif %}">
-                <a class="nav-link" href="/graphic-design/">Graphic Design</a>
-              </li>
-              <li class="nav-item{% if page.url == '/video-on-demand/' %} active{% endif %}">
-                <a class="nav-link" href="/video-on-demand/">
-                  <abbr class="initialism" title="Video On Demand">VOD</abbr>
-                </a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="directory-dropdown-menu-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <span class="nav-link-text">Directory</span>
-                  <span class="badge badge-primary">New</span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="directory-dropdown-menu-link">
-                  <a class="dropdown-item" href="/wrestling-training-schools/">Wrestling Training Schools</a>
-                </div>
-              </li>
-            </ul>
-            <form class="form-inline pl-lg-2">
-              <a class="btn btn-outline-primary d-block d-lg-inline-block mt-2 mt-lg-0 w-100 w-lg-auto" data-toggle="modal" href="#quote">Get quote</a>
-            </form>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main class="site-main" role="main">
-      {{ content }}
-    </main>
-    <footer class="site-footer" role="contentinfo">
-      <div class="container text-center">
-        <ul class="list-inline">
-          <li class="list-inline-item px-0">
-            <a href="https://www.facebook.com/yourfightsite" rel="external noopener noreferrer" target="_blank" title="{{ site.title }} on Facebook">
-              <span class="sr-only">{{ site.title }} on Facebook</span>
-              <span class="fa-stack">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item px-0">
-            <a href="https://twitter.com/yourfightsite" rel="external noopener noreferrer" target="_blank" title="{{ site.title }} on Twitter">
-              <span class="sr-only">{{ site.title }} on Twitter</span>
-              <span class="fa-stack">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li class="list-inline-item px-0">
-            <a href="https://www.instagram.com/yourfightsite" rel="external noopener noreferrer" target="_blank" title="{{ site.title }} on Instagram">
-              <span class="sr-only">{{ site.title }} on Instagram</span>
-              <span class="fa-stack">
-                <i class="fas fa-circle fa-stack-2x"></i>
-                <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-        </ul>
-        <p class="copyright">&copy; {{ "now" | date: "%Y" }} Your Fight Site <abbr title="Limited">Ltd</abbr>. All rights reserved.</p>
-        <p class="small mb-0">Registered in England &amp; Wales. Company <abbr title="number">&numero;</abbr> 10928224.</p>
-      </div>
-    </footer>
+    {% include header.html %}
+    {% include main.html %}
+    {% include footer.html %}
     {% include quote.html %}
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/tether.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/app.js"></script>
+    {% include scripts.html %}
   </body>
 </html>

@@ -1,11 +1,13 @@
 $enable-shadows: true;
 $enable-transitions: false;
 
+$red: #e3342f;
+$white: #fff;
 $dark: #22292f;
 
 $lead-font-weight: 400;
 
-$primary: #e3342f;
+$primary: $red;
 
 $body-color: #3d4852;
 
@@ -30,3 +32,15 @@ $thumbnail-box-shadow: 0 .1rem 1rem rgba(#000, .1);
 $btn-font-weight: 500;
 
 $dropdown-border-width: 0;
+$dropdown-link-color: $primary;
+$dropdown-link-hover-color: darken($primary, 15%);
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: $red;
+$navbar-dark-active-color: $red;
+$navbar-dark-disabled-color: rgba($white, .5);
+$navbar-dark-toggler-border-color: rgba($white, .4);
+$navbar-dark-brand-color: $white;
+$navbar-dark-brand-hover-color: $primary;
+
+$tooltip-bg: $dark;
