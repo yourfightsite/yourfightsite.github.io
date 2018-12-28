@@ -4,10 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
-    {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt | strip_html }}" />
-    {% endif %}
+    {% seo %}
     <title>{{ page.title | default: site.title | escape_once }}</title>
+    <link href="/img/logo@2x.png" rel="preload" as="image" media="(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)" type="image/png" />
+    <link href="https://pro.fontawesome.com" rel="preconnect dns-prefetch" />
+    <link href="https://fonts.gstatic.com" rel="preconnect dns-prefetch" />
+    <link href="https://connect.facebook.com" rel="preconnect dns-prefetch" />
     <link href="/css/app.css" rel="stylesheet" />
     {% include fonts.html %}
     {% include font-awesome.html %}

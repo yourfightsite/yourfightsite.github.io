@@ -4,6 +4,7 @@ email: "&#x69;n&#x66;o&#64;y&#x6f;&#117;&#114;&#x66;&#x69;&#x67;&#x68;&#116;s&#x
 plugins:
   - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-seo-tag
 
 exclude:
   - CNAME
@@ -15,16 +16,11 @@ sass:
 
 collections:
   projects:
-    output: true
+    output: false
 
   training_schools:
     output: false
     permalink: /wrestling-training-schools/:name
-
-prices:
-  web_design:
-    setup: 99
-    subscription: 4.99
 
 defaults:
   -
@@ -43,3 +39,11 @@ defaults:
 permalink: "/news/:year/:month/:day/:slug"
 
 analytics_id: "UA-50420715-1"
+
+twitter:
+  username: yourfightsite
+
+facebook:
+  publisher: yourfightsite
+
+lang: en_GB

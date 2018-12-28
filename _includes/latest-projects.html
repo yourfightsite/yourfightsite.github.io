@@ -1,0 +1,39 @@
+<section class="section mb-4" id="latest-projects">
+  <div class="container">
+    <header class="section-heading">
+      <h1>
+        Latest
+        <span class="d-none d-md-inline">
+          {% if include.category == 'mma' %}<abbr title="Mixed Martial Arts">MMA</abbr>{% else %}{{ include.category }}{% endif %}
+          web design
+        </span>
+        projects
+      </h1>
+    </header>
+    {% assign projects = site.projects | where: "category", include.category | sort: 'date' | reverse %}
+    <div class="row justify-content-center">
+      {% for project in projects limit:2 %}
+        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+          <div class="card card-project-v2 h-100 bg-dark text-light border-0">
+            <div class="card-bg" style="background-image: url({{ project.name | slugify | append: '.jpg' | prepend: '/img/projects/' | prepend: site.baseurl }});"></div>
+            <div class="card-body position-relative">
+              <div class="media">
+                <div class="media-left pr-4">
+                  <figure class="m-0">
+                    <img src="{{ project.name | slugify | append: '.jpg' | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ project.name }} website screen-shot" class="d-block w-100 shadow" />
+                  </figure>
+                </div>
+                <div class="media-body">
+                  <h1 class="card-title h5 text-white">
+                    <span>{{ project.name | replace: 'BAMMA', '<abbr title="British Association of Mixed Martial Arts">BAMMA</abbr>' | replace: 'iBox', '<span class="text-lowercase">i</span>Box' }}</span>
+                  </h1>
+                  <p class="card-text">{{ project.excerpt | replace: ' MMA', ' <abbr title="Mixed Martial Arts">MMA</abbr>' | replace: 'BAMMA', '<abbr title="British Association of Mixed Martial Arts">BAMMA</abbr>' }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

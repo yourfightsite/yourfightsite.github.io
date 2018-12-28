@@ -1,6 +1,6 @@
-<header class="site-header py-2 py-lg-3 shadow-sm" role="banner">
+<header class="site-header py-2 py-lg-3{% if page.static_header == true %} site-header-static{% else %} shadow-sm{% endif %}" role="banner">
   <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark px-0">
       <a class="navbar-brand" href="{% link index.html %}">
         <span class="navbar-brand-text">Your Fight Site</span>
       </a>
@@ -8,24 +8,31 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="app-navbar-content">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link{% if page.url == '/web-design/' %} active{% endif %}" href="{% link web-design.html %}">Web Design</a>
+        <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle{% if page.url contains '-web-design' %} active{% endif %}" href="{% link web-design.html %}" id="web-design-dropdown-menu-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Web Design</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="web-design-dropdown-menu-link">
+              <a class="dropdown-item{% if page.name == 'wrestling-web-design.html' %} active{% endif %}" href="{% link wrestling-web-design.html %}">Wrestling Web Design</a>
+              <a class="dropdown-item{% if page.name == 'mma-web-design.html' %} active{% endif %}" href="{% link mma-web-design.html %}"><abbr title="Mixed Martial Arts">MMA</abbr> Web Design</a>
+              <a class="dropdown-item{% if page.name == 'boxing-web-design.html' %} active{% endif %}" href="{% link boxing-web-design.html %}">Boxing Web Design</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link{% if page.url == '/graphic-design/' %} active{% endif %}" href="{% link graphic-design.html %}">Graphic Design</a>
+            <a class="nav-link{% if page.name == 'graphic-design.html' %} active{% endif %}" href="{% link graphic-design.html %}">Graphic Design</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link{% if page.url == '/video-on-demand/' %} active{% endif %}" href="{% link video-on-demand.html %}">
-              <abbr class="initialism" title="Video On Demand">VOD</abbr>
+            <a class="nav-link{% if page.name == 'video-on-demand.html' %} active{% endif %}" href="{% link video-on-demand.html %}">
+              <abbr title="Video On Demand">VOD</abbr>
             </a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="directory-dropdown-menu-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span class="nav-link-text">Directory</span>
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="directory-dropdown-menu-link">
-              <a class="dropdown-item" href="{% link wrestling-training-schools.html %}">Wrestling Training Schools</a>
+            <div class="dropdown-menu" aria-labelledby="directory-dropdown-menu-link">
+              <a class="dropdown-item{% if page.name == 'wrestling-training-schools.html' %} active{% endif %}" href="{% link wrestling-training-schools.html %}">Wrestling Training Schools</a>
             </div>
           </li>
         </ul>

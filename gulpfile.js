@@ -12,7 +12,7 @@ let config = {
 };
 
 gulp.task('sass', () => {
-  return gulp.src('./_sass/*.scss')
+  return gulp.src('./_sass/app.scss')
     .pipe(sourcemaps.init())
     .pipe(sass(config.sass))
     .pipe(sourcemaps.write())

@@ -3,24 +3,27 @@ $enable-transitions: false;
 
 $red: #e3342f;
 $white: #fff;
-$dark: #22292f;
 
 $lead-font-weight: 400;
 
 $primary: $red;
+$dark: #111417;
 
 $body-color: #3d4852;
 
 $text-muted: #8795a1;
 
-$font-family-sans-serif: "Libre Franklin", sans-serif;
+$font-family-sans-serif: "Ubuntu", sans-serif;
 
 $headings-color: $dark;
-$headings-font-weight: 700;
+$headings-font-family: "Quantico", sans-serif;
+$headings-font-weight: 400;
+$headings-margin-bottom: 1rem;
 
 $input-border-focus: $primary;
 
-$modal-backdrop-opacity: .8;
+$modal-backdrop-bg: #000;
+$modal-backdrop-opacity: .85;
 
 $thumbnail-padding: 0;
 $thumbnail-bg: $body-color;
@@ -30,10 +33,15 @@ $thumbnail-border-radius: .1rem;
 $thumbnail-box-shadow: 0 .1rem 1rem rgba(#000, .1);
 
 $btn-font-weight: 500;
+$btn-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
 
 $dropdown-border-width: 0;
-$dropdown-link-color: $primary;
-$dropdown-link-hover-color: darken($primary, 15%);
+$dropdown-link-color: $body-color;
+$dropdown-link-hover-color: $primary;
+$dropdown-link-hover-bg: transparent;
+$dropdown-link-disabled-color: rgba($body-color, .5);
 
 $navbar-dark-color: $white;
 $navbar-dark-hover-color: $red;
@@ -44,3 +52,6 @@ $navbar-dark-brand-color: $white;
 $navbar-dark-brand-hover-color: $primary;
 
 $tooltip-bg: $dark;
+
+$card-border-radius: 0;
+$card-inner-border-radius: 0;
