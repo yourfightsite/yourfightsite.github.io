@@ -13,14 +13,14 @@
     {% assign projects = site.projects | where: "category", include.category | sort: 'date' | reverse %}
     <div class="row justify-content-center">
       {% for project in projects limit:2 %}
-        <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+        <div class="col-12 col-lg-6 mb-3">
           <div class="card card-project-v2 h-100 bg-dark text-light border-0">
             <div class="card-bg" style="background-image: url({{ project.name | slugify | append: '.jpg' | prepend: '/img/projects/' | prepend: site.baseurl }});"></div>
             <div class="card-body position-relative">
               <div class="media">
                 <div class="media-left pr-4">
                   <figure class="m-0">
-                    <img src="{{ project.name | slugify | append: '.jpg' | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ project.name }} website screen-shot" class="d-block w-100 shadow" />
+                    <img src="{{ project.name | slugify | append: '.jpg' | prepend: '/img/projects/' | prepend: site.baseurl }}" alt="{{ project.name }} website screen-shot" class="d-block w-100" />
                   </figure>
                 </div>
                 <div class="media-body">
@@ -35,5 +35,13 @@
         </div>
       {% endfor %}
     </div>
+    <footer class="text-center">
+      <p>
+        Need your own custom {{ include.category | replace: 'mma', '<abbr class="initialism" title="Mixed Martial Arts">MMA</abbr>' }} website design?
+        <a class="btn btn-primary ml-2" data-toggle="modal" data-services="web-design" href="#quote">
+          <span class="btn-text">Get a free quote now</span>
+        </a>
+      </p>
+    </footer>
   </div>
 </section>

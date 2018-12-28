@@ -153,7 +153,7 @@
     color: $light;
     background-color: $dark;
     line-height: 1;
-    max-width: 30rem;
+    max-width: 33.75rem;
     border-radius: $border-radius;
   }
 
@@ -199,4 +199,8 @@
       width: 60px;
     }
   }
+}
+
+.feature-item {
+  margin-bottom: 1.5rem;
 }

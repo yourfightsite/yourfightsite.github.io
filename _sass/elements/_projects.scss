@@ -1,6 +1,6 @@
 .card-project-v2 {
   .card-bg {
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: 110%;
     position: absolute;
@@ -39,5 +39,9 @@
   .media-left {
     width: 40%;
     max-width: 238px;
+  }
+
+  figure {
+    @include box-shadow(0 .5rem 1rem rgba($black, .5));
   }
 }
