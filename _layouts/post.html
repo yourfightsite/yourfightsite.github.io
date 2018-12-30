@@ -3,20 +3,25 @@ layout: news
 ---
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h1 itemprop="headline">{{ page.title }}</h1>
+    <h1 class="mb-2" itemprop="headline">{{ page.title }}</h1>
   </header>
-  <footer class="text-muted">
-    <p>
-      Published
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" pubdate>{{ page.date | date_to_long_string }}</time>
-      by
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <footer class="small text-muted">
+    <ul class="list-inline">
+      <li class="list-inline-item">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" pubdate>{{ page.date | date_to_long_string }}</time>
+      </li>
+      <li class="list-inline-item" itemprop="author" itemscope itemtype="http://schema.org/Person">
         <span itemprop="givenName">Martin</span>
         <span itemprop="familyName">Bean</span>
-      </span>
-    </p>
+      </li>
+    </ul>
   </footer>
-  <div itemprop="articleBody">
+  <div class="post-content" itemprop="articleBody">
     {{ content }}
   </div>
+  <section class="mb-5" id="share">
+    {% assign share_url = page.url %}
+    {% assign share_title = page.title %}
+    {% include share.html url=share_url title=share_title %}
+  </section>
 </article>
