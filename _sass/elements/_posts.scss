@@ -1,0 +1,40 @@
+.post-image {
+  img {
+    box-shadow: $box-shadow-sm;
+  }
+
+  @include media-breakpoint-up(sm) {
+    img {
+      display: block;
+      border-radius: .25rem;
+      overflow: hidden;
+    }
+  }
+
+  &-caption {
+    font-size: $font-size-sm;
+    display: block;
+    margin-top: .5rem;
+  }
+}
+
+.post-image-large {
+  margin-right: $grid-gutter-width / -2;
+  margin-left: $grid-gutter-width / -2;
+
+  @include media-breakpoint-up(sm) {
+    margin-right: 0;
+    margin-left: 0;
+
+    img {
+      display: block;
+      border-radius: .25rem;
+      overflow: hidden;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-right: -2rem;
+    margin-left: -2rem;
+  }
+}

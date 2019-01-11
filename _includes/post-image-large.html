@@ -1,0 +1,8 @@
+<figure class="post-image post-image-large">
+  <img src="{{ include.src }}" alt="{{ include.alt }}" class="d-block w-100" />
+  {% if include.caption %}
+    <figcaption class="post-image-caption">
+      {{ include.caption }}
+    </figcaption>
+  {% endif %}
+</figure>
