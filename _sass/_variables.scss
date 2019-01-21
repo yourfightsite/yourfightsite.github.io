@@ -18,6 +18,7 @@ $font-family-sans-serif: "Ubuntu", sans-serif;
 $headings-color: $dark;
 $headings-font-family: "Quantico", sans-serif;
 $headings-font-weight: 400;
+$headings-line-height: 1.1;
 $headings-margin-bottom: 1rem;
 
 $input-border-focus: $primary;
@@ -55,3 +56,12 @@ $tooltip-bg: $dark;
 
 $card-border-radius: 0;
 $card-inner-border-radius: 0;
+
+$breadcrumb-padding-x: 0;
+$breadcrumb-padding-y: 0;
+$breadcrumb-item-padding: .5rem;
+$breadcrumb-bg: transparent;
+$breadcrumb-active-color: $body-color;
+$breadcrumb-divider: quote("»");
+$breadcrumb-divider-color: $text-muted;
+$breadcrumb-border-radius: 0;

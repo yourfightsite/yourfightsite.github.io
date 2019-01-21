@@ -1,6 +1,12 @@
 ---
 layout: news
 ---
+<nav class="mb-3 pb-3 border-bottom" aria-label="Breadcrumbs">
+  <ol class="breadcrumb mb-0 small">
+    <li class="breadcrumb-item"><a href="{% link news/index.html %}">News</a></li>
+    <li class="breadcrumb-item active">{{ page.title }}</li>
+  </ol>
+</nav>
 <article itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <h1 class="mb-2" itemprop="headline">{{ page.title }}</h1>

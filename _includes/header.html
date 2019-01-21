@@ -10,7 +10,7 @@
       <div class="collapse navbar-collapse" id="app-navbar-content">
         <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle{% if page.url contains '-web-design' %} active{% endif %}" href="{% link web-design.html %}" id="web-design-dropdown-menu-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle{% if page.active_nav != 'news' and page.url contains '-web-design' %} active{% endif %}" href="{% link web-design.html %}" id="web-design-dropdown-menu-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <span>Web Design</span>
             </a>
             <div class="dropdown-menu" aria-labelledby="web-design-dropdown-menu-link">
@@ -40,9 +40,12 @@
               <!-- Wrestling Podcasts -->
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link{% if page.active_nav == 'news' %} active{% endif %}" href="{% link news/index.html %}">News</a>
+          </li>
         </ul>
         <form class="form-inline pl-lg-2">
-          <a class="btn btn-primary d-block d-lg-inline-block mt-2 mt-lg-0 w-100 w-lg-auto" data-toggle="modal" href="#quote">Get quote</a>
+          <a class="btn btn-primary d-block d-lg-inline-block mt-2 mt-lg-0 ml-lg-2 w-100 w-lg-auto" data-toggle="modal" href="#quote">Get quote</a>
         </form>
       </div>
     </nav>
