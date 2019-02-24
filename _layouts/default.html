@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
+    {% include analytics.html %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
@@ -25,7 +26,7 @@
     {% include facebook-pixel.html %}
   </head>
   <body class="{{ page.body_class }}">
-    {% include analytics.html %}
+    {% include messenger.html %}
     {% include header.html %}
     {% include main.html %}
     {% include footer.html %}
