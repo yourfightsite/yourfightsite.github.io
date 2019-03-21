@@ -18,7 +18,7 @@
   }
 
   &:not(:last-child) {
-    margin-right: $spacer;
+    margin-right: $grid-gutter-width;
     margin-bottom: $spacer;
   }
 
@@ -65,6 +65,11 @@
   &-ldn-wrestling {
     background-image: url(../img/clients/ldn-wrestling.png);
     width: 119px;
+  }
+
+  &-new-generation-wrestling {
+    background-image: url(../img/clients/new-generation-wrestling.png);
+    width: 120px;
   }
 
   &-premier-british-wrestling {
