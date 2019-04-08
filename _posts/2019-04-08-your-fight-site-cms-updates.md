@@ -1,7 +1,10 @@
 ---
 excerpt: "What‘s new on the Your Fight Site CMS platform this week."
+image: /img/posts/2019-04-08-your-fight-site-cms-updates/admin@2x.jpg
 tags: ["cms"]
 title: "Your Fight Site CMS updates"
+twitter:
+  card: summary_large_image
 ---
 What‘s new on the Your Fight Site CMS platform this week.
 
@@ -10,7 +13,7 @@ What‘s new on the Your Fight Site CMS platform this week.
   <img srcset="/img/posts/2019-04-08-your-fight-site-cms-updates/admin@1x.jpg,
                /img/posts/2019-04-08-your-fight-site-cms-updates/admin@2x.jpg 2x"
        src="/img/posts/2019-04-08-your-fight-site-cms-updates/admin@1x.jpg"
-       alt="All Elite Wrestling web design mock-up"
+       alt="The new-look Your Fight Site CMS administration panel"
        class="d-block w-100" />
   <figcaption class="post-image-caption">The new-look Your Fight Site CMS administration panel.</figcaption>
 </figure>

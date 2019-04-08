@@ -46,11 +46,14 @@ twitter:
   username: yourfightsite
 
 facebook:
+  admins: 512236167
+  app_id: 264294516930801
   publisher: yourfightsite
 
 lang: en_GB
 
 author:
   name: Martin Bean
+  twitter: martinbean
 
 paginate: 10
