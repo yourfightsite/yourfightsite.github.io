@@ -1,12 +1,12 @@
 ---
-excerpt: "What‘s new on the Your Fight Site CMS platform this week."
+excerpt: "What’s new on the Your Fight Site CMS platform this week."
 image: /img/posts/2019-04-08-your-fight-site-cms-updates/admin@2x.jpg
 tags: ["cms"]
 title: "Your Fight Site CMS updates"
 twitter:
   card: summary_large_image
 ---
-What‘s new on the Your Fight Site CMS platform this week.
+What’s new on the Your Fight Site CMS platform this week.
 
 ## New-look admin panel
 <figure class="post-image post-image-large">
