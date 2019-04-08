@@ -12,6 +12,7 @@
   }
 
   &-caption {
+    color: #606f7b;
     font-size: $font-size-sm;
     display: block;
     margin-top: .5rem;
@@ -22,6 +23,10 @@
   margin-right: $grid-gutter-width / -2;
   margin-left: $grid-gutter-width / -2;
 
+  .post-image-caption {
+    padding-left: $grid-gutter-width / 2;
+  }
+
   @include media-breakpoint-up(sm) {
     margin-right: 0;
     margin-left: 0;
@@ -30,6 +35,10 @@
       display: block;
       border-radius: .25rem;
       overflow: hidden;
+    }
+
+    .post-image-caption {
+      padding-left: 0;
     }
   }
 
