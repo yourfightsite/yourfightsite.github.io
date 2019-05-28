@@ -1,5 +1,5 @@
 ---
-title: NGW Hull School
+title: NGW East Yorkshire School
 street_address: Eastmount Recreation Centre, Waveney Road
 locality: Hull
 region: East Yorkshire
