@@ -1,7 +1,10 @@
 ---
 comments: true
 excerpt: "We imagine what the website for the hottest new wrestling promotion All Elite Wrestling (AEW) could look like."
+image: /img/posts/2019-01-11-all-elite-wrestling-web-design-mockup/mockup@2x.jpg
 title: "All Elite Wrestling web design mockup"
+twitter:
+  card: summary_large_image
 ---
 Unless you’ve been living under a rock, you’ll know the hottest wrestling
 promotion in the world right now is the newly-formed All Elite Wrestling (AEW).
