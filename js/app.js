@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var $quote = $('#quote');
-  var $quoteEmail = $quote.find('[type="email"]');
+  var $quoteEmail = $quote.find('#quote-email');
   var $quoteServices = $quote.find('[type="checkbox"]');
   var $quoteBtn = $quote.find(':submit');
 
