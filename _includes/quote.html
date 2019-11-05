@@ -1,7 +1,10 @@
 <div class="modal fade" id="quote" tabindex="-1" role="dialog" aria-labelledby="quote-label" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <form action="https://yourfightsite.createsend.com/t/r/s/kujhfj/" method="post">
+      <form actions="/thanks" method="POST" name="Quote" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+        <div style="display: none;">
+          <input type="email" name="bot-field" autocomplete="off" />
+        </div>
         <div class="modal-header">
           <h4 class="modal-title" id="quote-label">Get quote</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -11,35 +14,38 @@
         <div class="modal-body">
           <div class="form-group">
             <label class="form-control-label" for="quote-email">Your email address:</label>
-            <input type="email" name="cm-kujhfj-kujhfj" class="form-control" id="quote-email" placeholder="you@example.com" required />
+            <input type="email" name="email" class="form-control" id="quote-email" placeholder="you@example.com" required />
             <small class="form-text text-muted">We will never share your email address or spam you.</small>
           </div>
-          <div class="form-group mb-0">
-            <label class="form-control-label">Services interested in:</label>
+          <div class="form-group">
+            <label class="form-control-label" for="service-web-design">Services interested in:</label>
             <div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="service-web-design" name="cm-fo-drdkjlji" value="8796402" data-service="web-design" />
+                <input type="checkbox" class="custom-control-input" id="service-web-design" name="service[]" value="Web design" data-service="web-design" />
                 <label class="custom-control-label" for="service-web-design">Web design</label>
               </div>
             </div>
             <div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="service-graphic-design" name="cm-fo-drdkjlji" value="8796403" data-service="graphic-design" />
+                <input type="checkbox" class="custom-control-input" id="service-graphic-design" name="service[]" value="Graphic design" data-service="graphic-design" />
                 <label class="custom-control-label" for="service-graphic-design">Graphic design</label>
               </div>
             </div>
             <div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="service-video-on-demand" name="cm-fo-drdkjlji" value="8796404" data-service="video-on-demand" />
+                <input type="checkbox" class="custom-control-input" id="service-video-on-demand" name="service[]" value="Video on demand" data-service="video-on-demand" />
                 <label class="custom-control-label" for="service-video-on-demand">Video on demand</label>
               </div>
             </div>
             <div>
               <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="service-event-ticketing" name="cm-fo-drdkjlji" value="10509485" data-service="event-ticketing" />
+                <input type="checkbox" class="custom-control-input" id="service-event-ticketing" name="service[]" value="Event ticketing" data-service="event-ticketing" />
                 <label class="custom-control-label" for="service-event-ticketing">Event ticketing</label>
               </div>
             </div>
+          </div>
+          <div class="form-group">
+            <div data-netlify-recaptcha="true"></div>
           </div>
         </div>
         <div class="modal-footer">
