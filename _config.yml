@@ -8,8 +8,13 @@ plugins:
   - jekyll-seo-tag
 
 exclude:
+  - build.sh
   - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile.js
   - node_modules
+  - package-lock.json
   - package.json
 
 sass:
