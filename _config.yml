@@ -27,6 +27,11 @@ defaults:
   -
     scope:
       path: ""
+    values:
+      messenger: true
+  -
+    scope:
+      path: ""
       type: "posts"
     values:
       active_nav: news
