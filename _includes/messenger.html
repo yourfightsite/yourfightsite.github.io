@@ -15,11 +15,12 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
-  <div class="fb-customerchat"
-    attribution="setup_tool"
+  <div
+    class="fb-customerchat"
     page_id="244234435463"
-    greeting_dialog_display="hide"
-    logged_in_greeting="Hey! How can we help?"
-    logged_out_greeting="Hey! How can we help?">
-  </div>
+    ref="{{ page.messenger_ref | default: '' }}"
+    logged_in_greeting="{{ page.messenger_logged_in_greeting | default: 'Hey, how can we help?' }}"
+    logged_out_greeting="{{ page.messenger_logged_out_greeting | default: page.messenger_logged_in_greeting | default: 'Hey, how can we help?' }}"
+    greeting_dialog_display="{{ page.messenger_greeting_dialog_display | default: 'hide' }}"
+    greeting_dialog_delay="{{ page.messenger_greeting_dialog_delay | default: '0' }}"></div>
 {% endif %}
