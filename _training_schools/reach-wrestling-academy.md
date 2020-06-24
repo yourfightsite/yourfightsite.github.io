@@ -21,4 +21,5 @@ opening_hours:
     -
       opens: "12:00"
       closes: "13:30"
+dbs_checked: true
 ---

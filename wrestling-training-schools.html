@@ -131,6 +131,20 @@ title: "Wrestling Training Schools & Academies"
           '<dd><a href="mailto:' + trainingSchool.email + '">' + trainingSchool.email + '</a></dd>';
       }
 
+      if (trainingSchool.country === 'GB') {
+        content += '<dt><abbr title="Disclosure and Barring Service">DBS</abbr> checked?</dt>';
+
+        if (trainingSchool.hasOwnProperty('dbs_checked')) {
+          if (trainingSchool.dbs_checked === true) {
+            content += '<dd><span class="text-success"><span class="fas fa-fw fa-check-circle"></span></span></dd>';
+          } else {
+            content += '<dd><span class="text-danger"><span class="fas fa-fw fa-times-circle"></span></span></dd>';
+          }
+        } else {
+          content += '<dd><span class="text-muted"><span class="fas fa-fw fa-question-circle" title="Unknown"></span></span></dd>';
+        }
+      }
+
       content += '</dl>';
 
       if (trainingSchool.content && trainingSchool.content.trim() != '') {

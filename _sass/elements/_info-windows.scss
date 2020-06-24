@@ -3,6 +3,10 @@
   font-size: $font-size-sm;
   line-height: $line-height-base;
   padding: .5rem .25rem;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 .infowindow-training-school {
