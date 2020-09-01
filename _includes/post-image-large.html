@@ -1,5 +1,5 @@
 <figure class="post-image post-image-large">
-  <img src="{{ include.src }}" alt="{{ include.alt }}" class="d-block w-100" />
+  <img src="{{ include.src }}" alt="{{ include.alt }}" class="d-block w-100{% if include.shadow == false %} shadow-none{% endif %}">
   {% if include.caption %}
     <figcaption class="post-image-caption">
       {{ include.caption }}
